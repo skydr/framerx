@@ -244,6 +244,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 var map = {
 	"./App.tsx": "./code/App.tsx",
+	"./ControlTree.tsx": "./code/ControlTree.tsx",
 	"./NavBody.tsx": "./code/NavBody.tsx",
 	"./NavHead.tsx": "./code/NavHead.tsx",
 	"./NewTest.tsx": "./code/NewTest.tsx",
@@ -312,6 +313,88 @@ exports.__info__ = [{ "name": "Hover", "type": "override" }];
 
 /***/ }),
 
+/***/ "./code/ControlTree.tsx":
+/*!******************************!*\
+  !*** ./code/ControlTree.tsx ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+//# framerSourceMap=eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29udHJvbFRyZWUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9jb2RlL0NvbnRyb2xUcmVlLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLGlDQUEyQztBQUUzQyxtQ0FBc0Q7QUFFdEQseUNBQXFDO0FBRXJDLDhCQUE4QjtBQUU5QixTQUFnQixRQUFROztJQUNwQixNQUFNLENBQUMsS0FBSyxFQUFFLFFBQVEsQ0FBQyxHQUFHLG1CQUFRLEVBQUUsQ0FBQTtJQUNwQyxPQUFPO1FBQ0gsS0FBSyxFQUFFLEdBQUcsRUFBRTs7WUFDUixRQUFRLENBQ0osQ0FBQyxLQUFLLENBQUMsUUFBUSxHQUFHLEtBQUssQ0FBQyxFQUN4QixDQUFDLEtBQUssQ0FBQyxRQUFRLEdBQUcsQ0FBQyxFQUFFLEtBQUssRUFBRSxjQUFjLEVBQUUsRUFBRSxFQUFFLEtBQUssRUFBRSxJQUFJLEVBQUUsQ0FBQyxDQUFDLENBQ2xFLENBQUE7U0FDSjtLQUNKLENBQUE7Q0FDSjtBQVZELDRCQVVDO0FBRUQsU0FBZ0IsV0FBVzs7SUFDdkIsTUFBTSxDQUFDLEtBQUssRUFBRSxRQUFRLENBQUMsR0FBRyxtQkFBUSxFQUFFLENBQUE7SUFDcEMsTUFBTSxRQUFRLEdBQUc7UUFDYixJQUFJLEVBQUUsRUFBRSxPQUFPLEVBQUUsQ0FBQyxFQUFFLE1BQU0sRUFBRSxFQUFFLEVBQUUsVUFBVSxFQUFFLEVBQUUsUUFBUSxFQUFFLENBQUMsRUFBRSxFQUFFO1FBQzdELE1BQU0sRUFBRSxFQUFFLE9BQU8sRUFBRSxDQUFDLEVBQUUsTUFBTSxFQUFFLENBQUMsRUFBRSxVQUFVLEVBQUUsRUFBRSxRQUFRLEVBQUUsQ0FBQyxFQUFFLEVBQUU7S0FDakUsQ0FBQTtJQUNELE9BQU87UUFDSCxPQUFPLEVBQUUsTUFBTTtRQUNmLFFBQVEsRUFBRSxRQUFRO1FBQ2xCLE9BQU8sRUFBRSxLQUFLLENBQUMsUUFBUSxLQUFLLEtBQUssQ0FBQyxDQUFDLENBQUMsTUFBTSxDQUFDLENBQUMsQ0FBQyxRQUFRO0tBQ3hELENBQUE7Q0FDSjtBQVhELGtDQVdDO0FBRUQsU0FBZ0IsUUFBUTs7SUFDcEIsTUFBTSxDQUFDLEtBQUssRUFBRSxRQUFRLENBQUMsR0FBRyxtQkFBUSxFQUFFLENBQUE7SUFDcEMsTUFBTSxRQUFRLEdBQUc7UUFDYixJQUFJLEVBQUUsRUFBRSxPQUFPLEVBQUUsQ0FBQyxFQUFFLE1BQU0sRUFBRSxFQUFFLEVBQUUsVUFBVSxFQUFFLEVBQUUsUUFBUSxFQUFFLENBQUMsRUFBRSxFQUFFO1FBQzdELE1BQU0sRUFBRSxFQUFFLE9BQU8sRUFBRSxDQUFDLEVBQUUsTUFBTSxFQUFFLENBQUMsRUFBRSxVQUFVLEVBQUUsRUFBRSxRQUFRLEVBQUUsQ0FBQyxFQUFFLEVBQUU7S0FDakUsQ0FBQTtJQUNELE9BQU87UUFDSCxPQUFPLEVBQUUsUUFBUTtRQUNqQixRQUFRLEVBQUUsUUFBUTtRQUNsQixPQUFPLEVBQUUsS0FBSyxDQUFDLFFBQVEsS0FBSyxJQUFJLENBQUMsQ0FBQyxDQUFDLE1BQU0sQ0FBQyxDQUFDLENBQUMsUUFBUTtLQUN2RCxDQUFBO0NBQ0o7QUFYRCw0QkFXQztBQUVELFNBQWdCLE1BQU07O0lBQ2xCLE1BQU0sUUFBUSxHQUFHLHFCQUFZLEVBQUUsQ0FBQTtJQUMvQixNQUFNLENBQUMsS0FBSyxFQUFFLFFBQVEsQ0FBQyxHQUFHLG1CQUFRLEVBQUUsQ0FBQTtJQUNwQyxpQkFBUyxDQUFDLEdBQUcsRUFBRTs7UUFDWCxLQUFLLENBQUMsV0FBVyxLQUFLLElBQUksSUFBSSxLQUFLLENBQUMsUUFBUSxLQUFLLEtBQUs7WUFDbEQsQ0FBQyxDQUFDLFFBQVEsQ0FBQyxLQUFLLENBQUM7Z0JBQ1gsQ0FBQyxFQUFFLENBQUM7Z0JBQ0osVUFBVSxFQUFFO29CQUNSLFFBQVEsRUFBRSxHQUFHO29CQUNiLElBQUksRUFBRSxPQUFPO2lCQUNoQjthQUNKLENBQUM7WUFDSixDQUFDLENBQUMsRUFBRSxDQUFBO0tBQ1gsQ0FBQyxDQUFBO0lBRUYsT0FBTztRQUNILGFBQWEsRUFBRSxRQUFRO1FBQ3ZCLGNBQWMsRUFBRSxDQUFDO0tBQ3BCLENBQUE7Q0FDSjtBQW5CRCx3QkFtQkMifQ==
+
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __webpack_require__(/*! react */ "react");
+const framer_1 = __webpack_require__(/*! framer */ "framer");
+const UseStore_1 = __webpack_require__(/*! ./UseStore */ "./code/UseStore.tsx");
+//let controls // Для анимации
+function shutTree() {
+    window["__checkBudget__"]();
+    const [store, setStore] = UseStore_1.useStore();
+    return {
+        onTap: () => {
+            window["__checkBudget__"]();
+            setStore((store.treeOpen = false), (store.treeHead = [{ title: "ПАО Сбербанк" }, { title: "ЦА" }]));
+        },
+    };
+}
+exports.shutTree = shutTree;
+function myAdminShow() {
+    window["__checkBudget__"]();
+    const [store, setStore] = UseStore_1.useStore();
+    const variatns = {
+        open: { opacity: 1, height: 95, transition: { duration: 5 } },
+        closed: { opacity: 0, height: 0, transition: { duration: 5 } },
+    };
+    return {
+        initial: "open",
+        variants: variatns,
+        animate: store.treeOpen === false ? "open" : "closed",
+    };
+}
+exports.myAdminShow = myAdminShow;
+function goToList() {
+    window["__checkBudget__"]();
+    const [store, setStore] = UseStore_1.useStore();
+    const variatns = {
+        open: { opacity: 1, height: 60, transition: { duration: 5 } },
+        closed: { opacity: 0, height: 0, transition: { duration: 5 } },
+    };
+    return {
+        initial: "closed",
+        variants: variatns,
+        animate: store.treeOpen === true ? "open" : "closed",
+    };
+}
+exports.goToList = goToList;
+function Scroll() {
+    window["__checkBudget__"]();
+    const controls = framer_1.useAnimation();
+    const [store, setStore] = UseStore_1.useStore();
+    react_1.useEffect(() => {
+        window["__checkBudget__"]();
+        store.treeLoading === true || store.treeOpen === false
+            ? controls.start({
+                y: 0,
+                transition: {
+                    duration: 0.6,
+                    type: "tween",
+                },
+            })
+            : "";
+    });
+    return {
+        scrollAnimate: controls,
+        contentOffsetY: 0,
+    };
+}
+exports.Scroll = Scroll;
+exports.__info__ = [{ "name": "shutTree", "type": "override" }, { "name": "myAdminShow", "type": "override" }, { "name": "goToList", "type": "override" }, { "name": "Scroll", "type": "override" }];
+
+
+/***/ }),
+
 /***/ "./code/NavBody.tsx":
 /*!**************************!*\
   !*** ./code/NavBody.tsx ***!
@@ -321,10 +404,11 @@ exports.__info__ = [{ "name": "Hover", "type": "override" }];
 
 "use strict";
 
-//# framerSourceMap=eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTmF2Qm9keS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL2NvZGUvTmF2Qm9keS50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSwrQkFBOEI7QUFFOUIsbUNBQXFDO0FBQ3JDLHFDQUFpRTtBQUNqRSwyQ0FBc0M7QUFFdEMseUNBQXFDO0FBRXJDLFNBQWdCLE9BQU8sQ0FBQyxLQUFLOztJQUN6QixNQUFNLENBQUMsS0FBSyxFQUFFLFFBQVEsQ0FBQyxHQUFHLG1CQUFRLEVBQUUsQ0FBQTtJQUNwQyxPQUFPLENBQ0gsb0JBQUMsY0FBSyxJQUFDLEdBQUcsRUFBRSxDQUFDLEVBQUUsU0FBUyxFQUFDLE9BQU8sRUFBQyxZQUFZLEVBQUMsT0FBTyxJQUNoRCxvQkFBUSxDQUFDLEdBQUcsQ0FBQyxJQUFJLENBQUMsRUFBRTs7UUFDakIsT0FBTyxDQUNILG9CQUFDLG1CQUFVLElBQ1AsR0FBRyxFQUFFLElBQUksQ0FBQyxLQUFLLEVBQ2YsUUFBUSxFQUFDLFFBQVEsRUFDakIsSUFBSSxFQUFFLElBQUksQ0FBQyxLQUFLLEVBQ2hCLEtBQUssRUFBRSxHQUFHLEVBQUU7O2dCQUNSLFFBQVEsQ0FDSixDQUFDLEtBQUssQ0FBQyxRQUFRLEdBQUc7b0JBQ2QsR0FBRyxLQUFLLENBQUMsUUFBUTtvQkFDakIsRUFBRSxLQUFLLEVBQUUsTUFBTSxFQUFFO2lCQUNwQixDQUFDLENBQ0wsQ0FBQTtnQkFDRCxPQUFPLENBQUMsR0FBRyxDQUFDLEtBQUssQ0FBQyxRQUFRLENBQUMsQ0FBQTthQUM5QixHQUNILENBQ0wsQ0FBQTtLQUNKLENBQUMsQ0FDRSxDQUNYLENBQUE7Q0FDSjtBQXhCRCwwQkF3QkM7QUFFRCxPQUFPLENBQUMsWUFBWSxHQUFHO0lBQ25CLEtBQUssRUFBRSxHQUFHO0lBQ1YsTUFBTSxFQUFFLEVBQUU7Q0FDYixDQUFBIn0=
+//# framerSourceMap=eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTmF2Qm9keS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL2NvZGUvTmF2Qm9keS50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSwrQkFBOEI7QUFDOUIsaUNBQTJDO0FBQzNDLG1DQUE2RDtBQUM3RCxxQ0FBaUU7QUFDakUsMkNBQXNDO0FBRXRDLHlDQUFxQztBQUVyQyxTQUFnQixPQUFPLENBQUMsS0FBSzs7SUFDekIsTUFBTSxDQUFDLEtBQUssRUFBRSxRQUFRLENBQUMsR0FBRyxtQkFBUSxFQUFFLENBQUE7SUFDcEMsTUFBTSxRQUFRLEdBQUcscUJBQVksRUFBRSxDQUFBO0lBRS9CLE1BQU0sSUFBSSxHQUFHO1FBQ1QsSUFBSSxFQUFFLEVBQUUsTUFBTSxFQUFFLEVBQUUsRUFBRTtRQUNwQixNQUFNLEVBQUUsRUFBRSxNQUFNLEVBQUUsQ0FBQyxFQUFFO1FBQ3JCLE9BQU8sRUFBRSxFQUFFLE1BQU0sRUFBRSxDQUFDLEVBQUU7S0FDekIsQ0FBQTtJQUNELE1BQU0sTUFBTSxHQUFHO1FBQ1gsSUFBSSxFQUFFLEVBQUUsTUFBTSxFQUFFLENBQUMsRUFBRSxVQUFVLEVBQUUsRUFBRSxRQUFRLEVBQUUsQ0FBQyxFQUFFLEVBQUU7UUFDaEQsTUFBTSxFQUFFLEVBQUUsTUFBTSxFQUFFLENBQUMsRUFBRSxVQUFVLEVBQUUsRUFBRSxRQUFRLEVBQUUsQ0FBQyxFQUFFLEVBQUU7UUFDbEQsT0FBTyxFQUFFLEVBQUUsTUFBTSxFQUFFLEVBQUUsRUFBRSxVQUFVLEVBQUUsRUFBRSxRQUFRLEVBQUUsQ0FBQyxFQUFFLEVBQUU7S0FDdkQsQ0FBQTtJQUNELE1BQU0sU0FBUyxHQUFHO1FBQ2QsSUFBSSxFQUFFLEVBQUUsVUFBVSxFQUFFLEVBQUUsZUFBZSxFQUFFLElBQUksRUFBRSxFQUFFO1FBQy9DLE1BQU0sRUFBRSxFQUFFLFVBQVUsRUFBRSxFQUFFLGVBQWUsRUFBRSxJQUFJLEVBQUUsRUFBRTtRQUNqRCxPQUFPLEVBQUUsRUFBRSxVQUFVLEVBQUUsRUFBRSxlQUFlLEVBQUUsSUFBSSxFQUFFLEVBQUU7S0FDckQsQ0FBQTtJQUNELGlCQUFTLENBQUMsR0FBRyxFQUFFOztRQUNYLEtBQUssQ0FBQyxXQUFXLEtBQUssSUFBSTtZQUN0QixDQUFDLENBQUMsVUFBVSxDQUFDLEdBQUcsRUFBRSxDQUFDLFFBQVEsQ0FBQyxDQUFDLEtBQUssQ0FBQyxXQUFXLEdBQUcsS0FBSyxDQUFDLENBQUMsRUFBRSxJQUFJLENBQUM7WUFDL0QsQ0FBQyxDQUFDLEVBQUUsQ0FBQTtLQUNYLENBQUMsQ0FBQTtJQUNGLE9BQU8sQ0FDSCxvQkFBQyxjQUFLLElBQ0YsR0FBRyxFQUFFLENBQUMsRUFDTixTQUFTLEVBQUMsT0FBTyxFQUNqQixZQUFZLEVBQUMsT0FBTyxFQUNwQixRQUFRLEVBQUUsU0FBUyxFQUNuQixPQUFPLEVBQUUsUUFBUSxFQUNqQixPQUFPLEVBQ0gsS0FBSyxDQUFDLFFBQVEsS0FBSyxJQUFJLElBQUksS0FBSyxDQUFDLFdBQVcsS0FBSyxLQUFLO1lBQ2xELENBQUMsQ0FBQyxNQUFNO1lBQ1IsQ0FBQyxDQUFDLEtBQUssQ0FBQyxRQUFRLEtBQUssSUFBSSxJQUFJLEtBQUssQ0FBQyxXQUFXLEtBQUssSUFBSTtnQkFDdkQsQ0FBQyxDQUFDLFNBQVM7Z0JBQ1gsQ0FBQyxDQUFDLFFBQVE7UUFHbEIsb0JBQUMsa0JBQVMsSUFDTixRQUFRLEVBQUUsTUFBTSxFQUNoQixLQUFLLEVBQUUsR0FBRyxFQUFFLENBQUMsUUFBUSxDQUFDLENBQUMsS0FBSyxDQUFDLFdBQVcsR0FBRyxLQUFLLENBQUMsQ0FBQyxHQUNwRDtRQUNELG9CQUFRLENBQUMsR0FBRyxDQUFDLElBQUksQ0FBQyxFQUFFOztZQUNqQixPQUFPLENBQ0gsb0JBQUMsbUJBQVUsSUFDUCxHQUFHLEVBQUUsSUFBSSxDQUFDLEtBQUssRUFDZixRQUFRLEVBQUMsUUFBUSxFQUNqQixRQUFRLEVBQUUsSUFBSSxFQUNkLElBQUksRUFBRSxJQUFJLENBQUMsS0FBSyxFQUNoQixLQUFLLEVBQUUsR0FBRyxFQUFFOztvQkFDUixRQUFRLENBQ0osQ0FBQyxLQUFLLENBQUMsUUFBUSxHQUFHLENBQUMsR0FBRyxLQUFLLENBQUMsUUFBUSxFQUFFLElBQUksQ0FBQyxDQUFDLEVBQzVDLENBQUMsS0FBSyxDQUFDLFdBQVcsR0FBRyxJQUFJLENBQUMsQ0FDN0IsQ0FBQTtvQkFDRCxRQUFRLENBQUMsS0FBSyxDQUFDO3dCQUNYLENBQUMsRUFBRSxDQUFDO3dCQUNKLFVBQVUsRUFBRTs0QkFDUixRQUFRLEVBQUUsR0FBRzs0QkFDYixJQUFJLEVBQUUsT0FBTzt5QkFDaEI7cUJBQ0osQ0FBQyxDQUFBO2lCQUNMLEdBQ0gsQ0FDTCxDQUFBO1NBQ0osQ0FBQyxDQUNFLENBQ1gsQ0FBQTtDQUNKO0FBcEVELDBCQW9FQztBQUVELE9BQU8sQ0FBQyxZQUFZLEdBQUc7SUFDbkIsS0FBSyxFQUFFLEdBQUc7SUFDVixNQUFNLEVBQUUsRUFBRTtDQUNiLENBQUE7QUFFRCxTQUFnQixVQUFVOztJQUN0QixNQUFNLENBQUMsS0FBSyxFQUFFLFFBQVEsQ0FBQyxHQUFHLG1CQUFRLEVBQUUsQ0FBQTtJQUNwQyxNQUFNLFVBQVUsR0FBRztRQUNmLElBQUksRUFBRSxFQUFFLE1BQU0sRUFBRSxvQkFBUSxDQUFDLE1BQU0sR0FBRyxFQUFFLEVBQUUsVUFBVSxFQUFFLEVBQUUsUUFBUSxFQUFFLENBQUMsRUFBRSxFQUFFO1FBQ25FLE1BQU0sRUFBRSxFQUFFLE1BQU0sRUFBRSxDQUFDLEVBQUUsVUFBVSxFQUFFLEVBQUUsUUFBUSxFQUFFLENBQUMsRUFBRSxFQUFFO1FBQ2xELE9BQU8sRUFBRSxFQUFFLE1BQU0sRUFBRSxFQUFFLEVBQUUsVUFBVSxFQUFFLEVBQUUsUUFBUSxFQUFFLENBQUMsRUFBRSxFQUFFO0tBQ3ZELENBQUE7SUFDRCxPQUFPO1FBQ0gsUUFBUSxFQUFFLFVBQVU7UUFDcEIsT0FBTyxFQUNILEtBQUssQ0FBQyxRQUFRLEtBQUssSUFBSSxJQUFJLEtBQUssQ0FBQyxXQUFXLEtBQUssS0FBSztZQUNsRCxDQUFDLENBQUMsTUFBTTtZQUNSLENBQUMsQ0FBQyxLQUFLLENBQUMsUUFBUSxLQUFLLElBQUksSUFBSSxLQUFLLENBQUMsV0FBVyxLQUFLLElBQUk7Z0JBQ3ZELENBQUMsQ0FBQyxTQUFTO2dCQUNYLENBQUMsQ0FBQyxRQUFRO1FBQ2xCLE9BQU8sRUFBRSxRQUFRO0tBQ3BCLENBQUE7Q0FDSjtBQWpCRCxnQ0FpQkMifQ==
 
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(/*! react */ "react");
+const react_1 = __webpack_require__(/*! react */ "react");
 const framer_1 = __webpack_require__(/*! framer */ "framer");
 const canvas_1 = __webpack_require__(/*! ./canvas */ "./code/canvas.tsx");
 const data_json_1 = __webpack_require__(/*! ./data.json */ "./code/data.json");
@@ -332,24 +416,74 @@ const UseStore_1 = __webpack_require__(/*! ./UseStore */ "./code/UseStore.tsx");
 function NavBody(props) {
     window["__checkBudget__"]();
     const [store, setStore] = UseStore_1.useStore();
-    return (React.createElement(framer_1.Stack, { gap: 0, alignment: "start", distribution: "start" }, data_json_1.cardData.map(card => {
+    const controls = framer_1.useAnimation();
+    const item = {
+        open: { height: 52 },
+        closed: { height: 0 },
+        loading: { height: 0 },
+    };
+    const loader = {
+        open: { height: 0, transition: { duration: 1 } },
+        closed: { height: 0, transition: { duration: 1 } },
+        loading: { height: 52, transition: { duration: 1 } },
+    };
+    const container = {
+        open: { transition: { staggerChildren: 0.05 } },
+        closed: { transition: { staggerChildren: 0.05 } },
+        loading: { transition: { staggerChildren: 0.05 } },
+    };
+    react_1.useEffect(() => {
         window["__checkBudget__"]();
-        return (React.createElement(canvas_1.PuperBlock, { key: card.title, overflow: "hidden", song: card.title, onTap: () => {
-                window["__checkBudget__"]();
-                setStore((store.treeHead = [
-                    ...store.treeHead,
-                    { title: "haha" },
-                ]));
-                console.log(store.treeHead);
-            } }));
-    })));
+        store.treeLoading === true
+            ? setTimeout(() => setStore((store.treeLoading = false)), 1500)
+            : "";
+    });
+    return (React.createElement(framer_1.Stack, { gap: 1, alignment: "start", distribution: "start", variants: container, initial: "closed", animate: store.treeOpen === true && store.treeLoading === false
+            ? "open"
+            : store.treeOpen === true && store.treeLoading === true
+                ? "loading"
+                : "closed" },
+        React.createElement(canvas_1.LoadBlock, { variants: loader, onTap: () => setStore((store.treeLoading = false)) }),
+        data_json_1.cardData.map(card => {
+            window["__checkBudget__"]();
+            return (React.createElement(canvas_1.PuperBlock, { key: card.title, overflow: "hidden", variants: item, song: card.title, onTap: () => {
+                    window["__checkBudget__"]();
+                    setStore((store.treeHead = [...store.treeHead, card]), (store.treeLoading = true));
+                    controls.start({
+                        y: 0,
+                        transition: {
+                            duration: 0.6,
+                            type: "tween",
+                        },
+                    });
+                } }));
+        })));
 }
 exports.NavBody = NavBody;
 NavBody.defaultProps = {
     width: 343,
     height: 54,
 };
-exports.__info__ = [{ "name": "NavBody", "children": false, "type": "component" }];
+function bodyHeight() {
+    window["__checkBudget__"]();
+    const [store, setStore] = UseStore_1.useStore();
+    const listHeight = {
+        open: { height: data_json_1.cardData.length * 52, transition: { duration: 1 } },
+        closed: { height: 0, transition: { duration: 1 } },
+        loading: { height: 52, transition: { duration: 1 } },
+    };
+    return {
+        variants: listHeight,
+        animate: store.treeOpen === true && store.treeLoading === false
+            ? "open"
+            : store.treeOpen === true && store.treeLoading === true
+                ? "loading"
+                : "closed",
+        initial: "closed",
+    };
+}
+exports.bodyHeight = bodyHeight;
+exports.__info__ = [{ "name": "NavBody", "children": false, "type": "component" }, { "name": "bodyHeight", "type": "override" }];
 
 
 /***/ }),
@@ -363,7 +497,7 @@ exports.__info__ = [{ "name": "NavBody", "children": false, "type": "component" 
 
 "use strict";
 
-//# framerSourceMap=eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTmF2SGVhZC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL2NvZGUvTmF2SGVhZC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSwrQkFBOEI7QUFFOUIsbUNBQStDO0FBQy9DLHFDQUFpRTtBQUVqRSx5Q0FBcUM7QUFFckMsU0FBZ0IsT0FBTyxDQUFDLEtBQUs7O0lBQ3pCLE1BQU0sQ0FBQyxLQUFLLEVBQUUsUUFBUSxDQUFDLEdBQUcsbUJBQVEsRUFBRSxDQUFBO0lBQ3BDLE9BQU8sQ0FDSCxvQkFBQyxjQUFLLElBQUMsR0FBRyxFQUFFLENBQUMsRUFBRSxTQUFTLEVBQUMsT0FBTyxFQUFDLFlBQVksRUFBQyxPQUFPLElBQ2hELEtBQUssQ0FBQyxRQUFRLENBQUMsR0FBRyxDQUFDLElBQUksQ0FBQyxFQUFFOztRQUN2QixPQUFPLENBQ0gsb0JBQUMsbUJBQVUsSUFDUCxHQUFHLEVBQUUsSUFBSSxDQUFDLEtBQUssRUFDZixRQUFRLEVBQUMsUUFBUSxFQUNqQixJQUFJLEVBQUUsSUFBSSxDQUFDLEtBQUssR0FDbEIsQ0FDTCxDQUFBO0tBQ0osQ0FBQyxDQUNFLENBQ1gsQ0FBQTtDQUNKO0FBZkQsMEJBZUM7QUFFRCxPQUFPLENBQUMsWUFBWSxHQUFHO0lBQ25CLEtBQUssRUFBRSxHQUFHO0lBQ1YsTUFBTSxFQUFFLEVBQUU7Q0FDYixDQUFBO0FBRUQsU0FBZ0IsVUFBVTs7SUFDdEIsTUFBTSxDQUFDLEtBQUssRUFBRSxRQUFRLENBQUMsR0FBRyxtQkFBUSxFQUFFLENBQUE7SUFDcEMsT0FBTztRQUNILE9BQU8sRUFBRTtZQUNMLE1BQU0sRUFBRSxLQUFLLENBQUMsUUFBUSxDQUFDLE1BQU0sR0FBRyxFQUFFO1lBQ2xDLFVBQVUsRUFBRSxFQUFFLFFBQVEsRUFBRSxDQUFDLEVBQUU7U0FDOUI7S0FDSixDQUFBO0NBQ0o7QUFSRCxnQ0FRQyJ9
+//# framerSourceMap=eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTmF2SGVhZC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL2NvZGUvTmF2SGVhZC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSwrQkFBOEI7QUFFOUIsbUNBQStDO0FBQy9DLHFDQUFpRTtBQUVqRSx5Q0FBcUM7QUFFckMsU0FBZ0IsT0FBTyxDQUFDLEtBQUs7O0lBQ3pCLE1BQU0sQ0FBQyxLQUFLLEVBQUUsUUFBUSxDQUFDLEdBQUcsbUJBQVEsRUFBRSxDQUFBO0lBQ3BDLE9BQU8sQ0FDSCxvQkFBQyxjQUFLLElBQUMsR0FBRyxFQUFFLENBQUMsRUFBRSxTQUFTLEVBQUMsT0FBTyxFQUFDLFlBQVksRUFBQyxPQUFPLElBQ2hELEtBQUssQ0FBQyxRQUFRLENBQUMsR0FBRyxDQUFDLElBQUksQ0FBQyxFQUFFOztRQUN2QixPQUFPLENBQ0gsb0JBQUMsbUJBQVUsSUFDUCxHQUFHLEVBQUUsSUFBSSxDQUFDLEtBQUssRUFDZixRQUFRLEVBQUMsUUFBUSxFQUNqQixJQUFJLEVBQUUsSUFBSSxDQUFDLEtBQUssRUFDaEIsS0FBSyxFQUFFLEdBQUcsRUFBRTs7Z0JBQ1IsUUFBUSxDQUNKLENBQUMsS0FBSyxDQUFDLFFBQVEsR0FBRyxJQUFJLENBQUMsRUFDdkIsQ0FBQyxLQUFLLENBQUMsV0FBVyxHQUFHLElBQUksQ0FBQyxDQUM3QixDQUFBO2FBQ0osR0FDSCxDQUNMLENBQUE7S0FDSixDQUFDLENBQ0UsQ0FDWCxDQUFBO0NBQ0o7QUFyQkQsMEJBcUJDO0FBRUQsT0FBTyxDQUFDLFlBQVksR0FBRztJQUNuQixLQUFLLEVBQUUsR0FBRztJQUNWLE1BQU0sRUFBRSxFQUFFO0NBQ2IsQ0FBQTtBQUVELFNBQWdCLFVBQVU7O0lBQ3RCLE1BQU0sQ0FBQyxLQUFLLEVBQUUsUUFBUSxDQUFDLEdBQUcsbUJBQVEsRUFBRSxDQUFBO0lBQ3BDLE9BQU87UUFDSCxPQUFPLEVBQUU7WUFDTCxNQUFNLEVBQUUsS0FBSyxDQUFDLFFBQVEsQ0FBQyxNQUFNLEdBQUcsRUFBRTtZQUNsQyxVQUFVLEVBQUUsRUFBRSxRQUFRLEVBQUUsQ0FBQyxFQUFFO1NBQzlCO0tBQ0osQ0FBQTtDQUNKO0FBUkQsZ0NBUUMifQ==
 
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(/*! react */ "react");
@@ -375,7 +509,10 @@ function NavHead(props) {
     const [store, setStore] = UseStore_1.useStore();
     return (React.createElement(framer_1.Stack, { gap: 0, alignment: "start", distribution: "start" }, store.treeHead.map(card => {
         window["__checkBudget__"]();
-        return (React.createElement(canvas_1.PuperBlock, { key: card.title, overflow: "hidden", song: card.title }));
+        return (React.createElement(canvas_1.PuperBlock, { key: card.title, overflow: "hidden", song: card.title, onTap: () => {
+                window["__checkBudget__"]();
+                setStore((store.treeOpen = true), (store.treeLoading = true));
+            } }));
     })));
 }
 exports.NavHead = NavHead;
@@ -742,7 +879,7 @@ exports.__info__ = [{ "name": "SimpleAccordions", "children": false, "type": "co
 
 "use strict";
 
-//# framerSourceMap=eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVXNlU3RvcmUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9jb2RlL1VzZVN0b3JlLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLG1DQUFxQztBQUV4QixRQUFBLFFBQVEsR0FBRyxtQkFBVyxDQUFDO0lBQ2hDLEtBQUssRUFBRSxDQUFDO0lBQ1IsU0FBUyxFQUFFLEtBQUs7SUFDaEIsUUFBUSxFQUFFLENBQUMsRUFBRSxLQUFLLEVBQUUsY0FBYyxFQUFFLEVBQUUsRUFBRSxLQUFLLEVBQUUsSUFBSSxFQUFFLENBQUM7Q0FDekQsQ0FBQyxDQUFBIn0=
+//# framerSourceMap=eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVXNlU3RvcmUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9jb2RlL1VzZVN0b3JlLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLG1DQUFxQztBQUV4QixRQUFBLFFBQVEsR0FBRyxtQkFBVyxDQUFDO0lBQ2hDLEtBQUssRUFBRSxDQUFDO0lBQ1IsU0FBUyxFQUFFLEtBQUs7SUFDaEIsUUFBUSxFQUFFLENBQUMsRUFBRSxLQUFLLEVBQUUsY0FBYyxFQUFFLEVBQUUsRUFBRSxLQUFLLEVBQUUsSUFBSSxFQUFFLENBQUM7SUFDdEQsUUFBUSxFQUFFLEtBQUs7SUFDZixXQUFXLEVBQUUsS0FBSztDQUNyQixDQUFDLENBQUEifQ==
 
 Object.defineProperty(exports, "__esModule", { value: true });
 const store_1 = __webpack_require__(/*! ./store */ "./code/store.ts");
@@ -750,6 +887,8 @@ exports.useStore = store_1.createStore({
     count: 0,
     darkTheme: false,
     treeHead: [{ title: "ПАО Сбербанк" }, { title: "ЦА" }],
+    treeOpen: false,
+    treeLoading: false,
 });
 exports.__info__ = [];
 
@@ -768,7 +907,7 @@ exports.__info__ = [];
 Object.defineProperty(exports, "__esModule", { value: true });
 // WARNING: this file is auto generated, any changes will be lost
 const framer_1 = __webpack_require__(/*! framer */ "framer");
-const canvas = framer_1.CanvasStore.shared({"children":[{"componentClass":"Frame","props":{"key":"wsDcMEjv8","id":"id_wsDcMEjv8","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":271,"intrinsicHeight":66},"_border":{},"visible":true,"style":{"rotate":0,"overflow":"hidden","backgroundColor":"hsl(0, 45%, 65%)"},"background":{"r":205.91250000000002,"g":125.58749999999998,"b":125.58749999999998,"a":1,"h":0,"s":0.45,"l":0.65,"initialValue":"hsl(0, 45%, 65%)","roundA":1,"format":"hsl"},"name":"item"},"children":[{"componentClass":"Frame","props":{"key":"lR8xp_Cvt","id":"id_lR8xp_Cvt","willChangeTransform":false,"_constraints":{"enabled":true},"width":44,"height":40,"left":21,"top":11,"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"rgba(0, 153, 255, 0.5)"},"background":{"r":0,"g":153,"b":255,"a":0.5,"h":204,"s":1,"l":0.5,"initialValue":"rgba(0, 153, 255, 0.5)","roundA":0.5,"format":"rgb"}},"children":[],"name":null}],"name":"item"},{"componentClass":"Frame","props":{"key":"QVcTyViWh","id":"id_QVcTyViWh","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":343,"intrinsicHeight":52},"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"rgb(255, 255, 255)","borderRadius":"12px","boxShadow":"0px 6px 16px 0px rgba(0, 0, 0, 0.08)"},"background":{"r":255,"g":255,"b":255,"a":1,"h":0,"s":0,"l":1,"initialValue":"rgb(255, 255, 255)","roundA":1,"format":"rgb"},"_overrideForwardingDescription":{"id_r2vflzwJ3":"song"},"name":"puperBlock"},"children":[{"componentClass":"Text","props":{"key":"r2vflzwJ3","id":"id_r2vflzwJ3","willChangeTransform":false,"_constraints":{"enabled":true,"autoSize":false},"height":20,"left":16,"right":16,"top":"50%","center":"y","rawHTML":"<div class='DraftEditor-alignLeft'><div data-offset-key=\"e51o9-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"e51o9-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:15px;letter-spacing:0px;line-height:1.2000000000000002\"><span data-text=\"true\">song</span></span></div></div>","alignment":"left","fonts":["__SystemDefault-400-normal__"],"opacity":1,"rotation":0,"visible":true,"autoSize":false,"calculatedSize":{"height":18,"width":312},"isEditable":false,"name":"song"},"name":"song"}],"name":"puperBlock"},{"componentClass":"Frame","props":{"key":"cIV7J00sO","id":"id_cIV7J00sO","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":343,"intrinsicHeight":52},"_border":{},"visible":true,"style":{"rotate":0,"overflow":"hidden","backgroundColor":"white","borderRadius":"12px","boxShadow":"0px 6px 16px 0px rgba(0, 0, 0, 0.08)"},"background":{"r":255,"g":255,"b":255,"a":1,"h":0,"s":0,"l":1,"initialValue":"white","roundA":1,"format":"rgb"},"_overrideForwardingDescription":{"id_wLbcAfs2B":"Controls_Progress_Indicator","id_wLbcAfs2B@framer/edoardo.ios-kit-dIJP6Kt2z-fRe4cwWuU":"icon"},"name":"loadBlock"},"children":[{"componentClass":"Frame","props":{"key":"wLbcAfs2B","id":"id_wLbcAfs2B","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":343,"intrinsicHeight":44},"left":0,"right":0,"top":4,"bottom":4,"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible"},"background":null,"_overrideForwardingDescription":{"id_wLbcAfs2B@framer/edoardo.ios-kit-dIJP6Kt2z-fRe4cwWuU":"icon"},"name":"Controls / Progress Indicator"},"children":[{"componentClass":"SVG","props":{"key":"wLbcAfs2B@framer/edoardo.ios-kit-dIJP6Kt2z-fRe4cwWuU","id":"id_wLbcAfs2B\\@framer\\/edoardo\\.ios-kit-dIJP6Kt2z-fRe4cwWuU","willChangeTransform":false,"opacity":1,"_constraints":{"enabled":true},"width":35,"height":35,"left":"50%","top":"51.13636363636363%","center":true,"rotation":0,"svg":"<?xml version=\"1.0\"?><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"35\" height=\"35\"><g><path d=\"M 16.375 1.25 C 16.375 0.56 16.935 0 17.625 0 L 17.625 0 C 18.315 0 18.875 0.56 18.875 1.25 L 18.875 8.75 C 18.875 9.44 18.315 10 17.625 10 L 17.625 10 C 16.935 10 16.375 9.44 16.375 8.75 Z\" fill=\"rgba(200, 202, 206, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(3.75 12.283) rotate(-90 1.25 5)\" fill=\"rgba(237, 238, 240, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(28.75 12.283) rotate(-90 1.25 5)\" fill=\"rgba(162, 167, 175, 1.00)\"></path><path d=\"M 16.375 26.25 C 16.375 25.56 16.935 25 17.625 25 L 17.625 25 C 18.315 25 18.875 25.56 18.875 26.25 L 18.875 33.75 C 18.875 34.44 18.315 35 17.625 35 L 17.625 35 C 16.935 35 16.375 34.44 16.375 33.75 Z\" fill=\"rgba(122, 129, 139, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(5.541 6.185) rotate(-60 1.25 5)\" fill=\"rgba(224, 225, 228, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(27.192 18.685) rotate(-60 1.25 5)\" fill=\"rgba(149, 154, 163, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(10.125 1.675) rotate(-30 1.25 5)\" fill=\"rgba(212, 214, 218, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(22.625 23.325) rotate(-30 1.25 5)\" fill=\"rgba(137, 142, 151, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(10.116 23.39) rotate(210 1.25 5)\" fill=\"rgba(109, 115, 129, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(22.616 1.739) rotate(210 1.25 5)\" fill=\"rgba(187, 190, 196, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(5.541 18.815) rotate(-120 1.25 5)\" fill=\"rgba(247, 248, 249, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(27.192 6.315) rotate(-120 1.25 5)\" fill=\"rgba(175, 179, 185, 1.00)\"></path></g></svg>","visible":true,"intrinsicHeight":35,"intrinsicWidth":35,"dropShadows":[],"fill":{"r":0,"g":0,"b":0,"a":1,"h":0,"s":0,"l":0,"initialValue":"rgba(0,0,0,1)","roundA":1,"format":"rgb"}},"children":[],"name":"icon"}],"name":"Controls_Progress_Indicator"}],"name":"loadBlock"},{"componentClass":"Frame","props":{"key":"dyMwEFRt_","id":"id_dyMwEFRt_","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":343,"intrinsicHeight":52},"_border":{},"visible":true,"style":{"rotate":0,"overflow":"hidden"},"background":null,"_overrideForwardingDescription":{"id_F6dRFe6N6":"song"},"name":"lineElement"},"children":[{"componentClass":"Text","props":{"key":"F6dRFe6N6","id":"id_F6dRFe6N6","willChangeTransform":false,"_constraints":{"enabled":true,"autoSize":false},"height":20,"left":16,"right":16,"top":"50%","center":"y","rawHTML":"<div class='DraftEditor-alignLeft'><div data-offset-key=\"e51o9-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"e51o9-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:15px;letter-spacing:0px;line-height:1.2000000000000002\"><span data-text=\"true\">song</span></span></div></div>","alignment":"left","fonts":["__SystemDefault-400-normal__"],"opacity":1,"rotation":0,"visible":true,"autoSize":false,"calculatedSize":{"height":18,"width":312},"isEditable":false,"name":"song"},"name":"song"},{"componentClass":"Frame","props":{"key":"dZyZkSge8","id":"id_dZyZkSge8","willChangeTransform":false,"_constraints":{"enabled":true},"height":1,"left":0,"right":0,"bottom":0,"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"hsl(0, 0%, 90%)"},"background":{"r":229.5,"g":229.5,"b":229.5,"a":1,"h":0,"s":0,"l":0.9,"initialValue":"hsl(0, 0%, 90%)","roundA":1,"format":"hsl"}},"children":[],"name":null}],"name":"lineElement"},{"componentClass":"Frame","props":{"key":"KZrzqBTJC","id":"id_KZrzqBTJC","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":375,"intrinsicHeight":83},"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"hsla(0, 0%, 51%, 0.5)"},"background":{"r":130.05,"g":130.05,"b":130.05,"a":0.5,"h":0,"s":0,"l":0.51,"initialValue":"hsla(0, 0%, 51%, 0.5)","roundA":0.5,"format":"hsl"},"name":"navbar"},"children":[{"componentClass":"Text","props":{"key":"inpwO7c3N","id":"id_inpwO7c3N","willChangeTransform":false,"_constraints":{"enabled":true,"autoSize":true},"width":63,"height":16,"left":18,"top":26,"rawHTML":"<div data-offset-key=\"90f0i-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"90f0i-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:hsl(0, 0%, 0%);font-size:13px;letter-spacing:0px;line-height:1.3\"><span data-text=\"true\">SADDASD</span></span></div>","fonts":["__SystemDefault-400-normal__"],"opacity":1,"rotation":0,"visible":true,"autoSize":true,"calculatedSize":{"height":16,"width":63},"isEditable":false},"name":null}],"name":"navbar"},{"componentClass":"Frame","props":{"key":"l5abkKzfy","id":"id_l5abkKzfy","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":343,"intrinsicHeight":95},"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible"},"background":null,"_overrideForwardingDescription":{"id_t53tw1YCD":"body"},"name":"myAdmin"},"children":[{"componentClass":"Frame","props":{"key":"t53tw1YCD","id":"id_t53tw1YCD","willChangeTransform":false,"_constraints":{"enabled":true},"left":0,"right":0,"top":0,"bottom":20,"_border":{},"visible":true,"style":{"rotate":0,"overflow":"hidden","backgroundColor":"hsl(0, 0%, 100%)","borderRadius":"0 0 12px 12px","boxShadow":"0px 6px 16px 0px rgba(0, 0, 0, 0.08)"},"background":{"r":255,"g":255,"b":255,"a":1,"h":0,"s":0,"l":1,"initialValue":"hsl(0, 0%, 100%)","roundA":1,"format":"hsl"},"name":"body"},"children":[{"componentClass":"Frame","props":{"key":"ovNwPmyD4","id":"id_ovNwPmyD4","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":46,"intrinsicHeight":46},"width":46,"height":46,"left":11,"top":"42.66666666666667%","center":"y","_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","borderRadius":"50%"},"background":{"src":"rfti4p0qQhVdESpcMM8j53yMzAY.jpg","pixelWidth":3222,"pixelHeight":4400,"intrinsicWidth":1611,"intrinsicHeight":2200,"fit":"fill"}},"children":[],"name":null},{"componentClass":"Text","props":{"key":"YkiwoGNDf","id":"id_YkiwoGNDf","willChangeTransform":false,"_constraints":{"enabled":true,"autoSize":false},"height":22,"left":66,"right":20,"top":10,"rawHTML":"<div data-offset-key=\"91hif-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"91hif-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, &quot;System Default&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:17px;letter-spacing:0px;line-height:1.3;font-weight:600\"><span data-text=\"true\">Пренко Вероника Сергеевна</span></span></div>","fonts":["__SystemDefault-600-normal__"],"opacity":1,"rotation":0,"visible":true,"autoSize":false,"calculatedSize":{"height":22,"width":258},"isEditable":false},"name":null},{"componentClass":"Text","props":{"key":"tKZYNmJ60","id":"id_tKZYNmJ60","willChangeTransform":false,"_constraints":{"enabled":true,"autoSize":false},"height":16,"left":66,"right":20,"top":37,"rawHTML":"<div data-offset-key=\"91hif-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"91hif-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:rgb(102, 102, 102);font-size:12px;letter-spacing:0px;line-height:1.4\"><span data-text=\"true\">Пренко Вероника Сергеевна</span></span></div>","fonts":["__SystemDefault-400-normal__"],"opacity":1,"rotation":0,"visible":true,"autoSize":false,"calculatedSize":{"height":16,"width":258},"isEditable":false},"name":null}],"name":"body"},{"componentClass":"Frame","props":{"key":"nLsK7DlSi","id":"id_nLsK7DlSi","willChangeTransform":false,"_constraints":{"enabled":true},"width":1,"height":20,"left":"45.33527696793003%","bottom":0,"center":"x","_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"rgb(194, 194, 194)"},"background":{"r":194,"g":194,"b":194,"a":1,"h":0,"s":0,"l":0.7607843137254902,"initialValue":"rgb(194, 194, 194)","roundA":1,"format":"rgb"}},"children":[],"name":null}],"name":"myAdmin"},{"componentClass":"Frame","props":{"key":"c5Ug4GPVt","id":"id_c5Ug4GPVt","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":343,"intrinsicHeight":68},"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"rgb(255, 255, 255)","borderRadius":"12px","boxShadow":"0px 6px 16px 0px rgba(0, 0, 0, 0.08)"},"background":{"r":255,"g":255,"b":255,"a":1,"h":0,"s":0,"l":1,"initialValue":"rgb(255, 255, 255)","roundA":1,"format":"rgb"},"name":"myName"},"children":[{"componentClass":"Frame","props":{"key":"r53OkTh10","id":"id_r53OkTh10","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":46,"intrinsicHeight":46},"width":46,"height":46,"left":10,"top":10,"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","borderRadius":"50%"},"background":{"src":"WQICOjzB9x5m5PjFm3DeRFCoTc.jpg","pixelWidth":2647,"pixelHeight":3530,"intrinsicWidth":1323.5,"intrinsicHeight":1765,"fit":"fill"}},"children":[],"name":null},{"componentClass":"Text","props":{"key":"a3oRZvknh","id":"id_a3oRZvknh","willChangeTransform":false,"_constraints":{"enabled":true,"autoSize":false},"height":22,"left":66,"right":20,"top":10,"rawHTML":"<div data-offset-key=\"91hif-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"91hif-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, &quot;System Default&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:17px;letter-spacing:0px;line-height:1.3;font-weight:600\"><span data-text=\"true\">Пренко Вероника Сергеевна</span></span></div>","fonts":["__SystemDefault-600-normal__"],"opacity":1,"rotation":0,"visible":true,"autoSize":false,"calculatedSize":{"height":22,"width":258},"isEditable":false},"name":null},{"componentClass":"Text","props":{"key":"HlBQLrBhS","id":"id_HlBQLrBhS","willChangeTransform":false,"_constraints":{"enabled":true,"autoSize":false},"height":16,"left":66,"right":20,"top":37,"rawHTML":"<div data-offset-key=\"91hif-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"91hif-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:rgb(102, 102, 102);font-size:12px;letter-spacing:0px;line-height:1.4\"><span data-text=\"true\">Пренко Вероника Сергеевна</span></span></div>","fonts":["__SystemDefault-400-normal__"],"opacity":1,"rotation":0,"visible":true,"autoSize":false,"calculatedSize":{"height":16,"width":258},"isEditable":false},"name":null}],"name":"myName"},{"componentClass":"Frame","props":{"key":"XJ_OROGC6","id":"id_XJ_OROGC6","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":343,"intrinsicHeight":60},"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible"},"background":null,"name":"goToUsers"},"children":[{"componentClass":"Frame","props":{"key":"wbPEGKOm0","id":"id_wbPEGKOm0","willChangeTransform":false,"_constraints":{"enabled":true},"width":1,"height":10,"right":79,"top":0,"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"rgb(194, 194, 194)"},"background":{"r":194,"g":194,"b":194,"a":1,"h":0,"s":0,"l":0.7607843137254902,"initialValue":"rgb(194, 194, 194)","roundA":1,"format":"rgb"}},"children":[],"name":null},{"componentClass":"Frame","props":{"key":"HMFuQz9cq","id":"id_HMFuQz9cq","willChangeTransform":false,"_constraints":{"enabled":true},"width":1,"left":"50%","top":0,"bottom":0,"center":"x","_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"rgb(194, 194, 194)"},"background":{"r":194,"g":194,"b":194,"a":1,"h":0,"s":0,"l":0.7607843137254902,"initialValue":"rgb(194, 194, 194)","roundA":1,"format":"rgb"}},"children":[],"name":null},{"componentClass":"Frame","props":{"key":"g858gxwHS","id":"id_g858gxwHS","willChangeTransform":false,"_constraints":{"enabled":true},"width":159,"right":0,"top":10,"bottom":10,"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"rgb(255, 255, 255)","borderRadius":"12px","boxShadow":"0px 6px 12px 0px rgba(0, 0, 0, 0.08)"},"background":{"r":255,"g":255,"b":255,"a":1,"h":0,"s":0,"l":1,"initialValue":"rgb(255, 255, 255)","roundA":1,"format":"rgb"}},"children":[{"componentClass":"Text","props":{"key":"QY7hDOK2C","id":"id_QY7hDOK2C","willChangeTransform":false,"_constraints":{"enabled":true,"autoSize":true},"width":77,"height":15,"left":15,"top":"48.75%","center":"y","rawHTML":"<div data-offset-key=\"c4qjo-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"c4qjo-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:13px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Сотрудники</span></span></div>","fonts":["__SystemDefault-400-normal__"],"opacity":1,"rotation":0,"visible":true,"autoSize":true,"calculatedSize":{"height":15,"width":77},"isEditable":false},"name":null}],"name":null}],"name":"goToUsers"}]});
+const canvas = framer_1.CanvasStore.shared({"children":[{"componentClass":"Frame","props":{"key":"wsDcMEjv8","id":"id_wsDcMEjv8","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":271,"intrinsicHeight":66},"_border":{},"visible":true,"style":{"rotate":0,"overflow":"hidden","backgroundColor":"hsl(0, 45%, 65%)"},"background":{"r":205.91250000000002,"g":125.58749999999998,"b":125.58749999999998,"a":1,"h":0,"s":0.45,"l":0.65,"initialValue":"hsl(0, 45%, 65%)","roundA":1,"format":"hsl"},"name":"item"},"children":[{"componentClass":"Frame","props":{"key":"lR8xp_Cvt","id":"id_lR8xp_Cvt","willChangeTransform":false,"_constraints":{"enabled":true},"width":44,"height":40,"left":21,"top":11,"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"rgba(0, 153, 255, 0.5)"},"background":{"r":0,"g":153,"b":255,"a":0.5,"h":204,"s":1,"l":0.5,"initialValue":"rgba(0, 153, 255, 0.5)","roundA":0.5,"format":"rgb"}},"children":[],"name":null}],"name":"item"},{"componentClass":"Frame","props":{"key":"QVcTyViWh","id":"id_QVcTyViWh","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":343,"intrinsicHeight":52},"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"rgb(255, 255, 255)","borderRadius":"12px","boxShadow":"0px 6px 16px 0px rgba(0, 0, 0, 0.08)"},"background":{"r":255,"g":255,"b":255,"a":1,"h":0,"s":0,"l":1,"initialValue":"rgb(255, 255, 255)","roundA":1,"format":"rgb"},"_overrideForwardingDescription":{"id_r2vflzwJ3":"song"},"name":"puperBlock"},"children":[{"componentClass":"Text","props":{"key":"r2vflzwJ3","id":"id_r2vflzwJ3","willChangeTransform":false,"_constraints":{"enabled":true,"autoSize":false},"height":20,"left":16,"right":16,"top":"50%","center":"y","rawHTML":"<div class='DraftEditor-alignLeft'><div data-offset-key=\"e51o9-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"e51o9-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:15px;letter-spacing:0px;line-height:1.2000000000000002\"><span data-text=\"true\">song</span></span></div></div>","alignment":"left","fonts":["__SystemDefault-400-normal__"],"opacity":1,"rotation":0,"visible":true,"autoSize":false,"calculatedSize":{"width":312,"height":18},"isEditable":false,"name":"song"},"name":"song"}],"name":"puperBlock"},{"componentClass":"Frame","props":{"key":"cIV7J00sO","id":"id_cIV7J00sO","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":343,"intrinsicHeight":52},"_border":{},"visible":true,"style":{"rotate":0,"overflow":"hidden","backgroundColor":"white","borderRadius":"12px","boxShadow":"0px 6px 16px 0px rgba(0, 0, 0, 0.08)"},"background":{"r":255,"g":255,"b":255,"a":1,"h":0,"s":0,"l":1,"initialValue":"white","roundA":1,"format":"rgb"},"_overrideForwardingDescription":{"id_wLbcAfs2B":"Controls_Progress_Indicator","id_wLbcAfs2B@framer/edoardo.ios-kit-dIJP6Kt2z-fRe4cwWuU":"icon"},"name":"loadBlock"},"children":[{"componentClass":"Frame","props":{"key":"wLbcAfs2B","id":"id_wLbcAfs2B","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":343,"intrinsicHeight":44},"left":0,"right":0,"top":4,"bottom":4,"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible"},"background":null,"_overrideForwardingDescription":{"id_wLbcAfs2B@framer/edoardo.ios-kit-dIJP6Kt2z-fRe4cwWuU":"icon"},"name":"Controls / Progress Indicator"},"children":[{"componentClass":"SVG","props":{"key":"wLbcAfs2B@framer/edoardo.ios-kit-dIJP6Kt2z-fRe4cwWuU","id":"id_wLbcAfs2B\\@framer\\/edoardo\\.ios-kit-dIJP6Kt2z-fRe4cwWuU","willChangeTransform":false,"opacity":1,"_constraints":{"enabled":true},"width":35,"height":35,"left":"50%","top":"51.13636363636363%","center":true,"rotation":0,"svg":"<?xml version=\"1.0\"?><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"35\" height=\"35\"><g><path d=\"M 16.375 1.25 C 16.375 0.56 16.935 0 17.625 0 L 17.625 0 C 18.315 0 18.875 0.56 18.875 1.25 L 18.875 8.75 C 18.875 9.44 18.315 10 17.625 10 L 17.625 10 C 16.935 10 16.375 9.44 16.375 8.75 Z\" fill=\"rgba(200, 202, 206, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(3.75 12.283) rotate(-90 1.25 5)\" fill=\"rgba(237, 238, 240, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(28.75 12.283) rotate(-90 1.25 5)\" fill=\"rgba(162, 167, 175, 1.00)\"></path><path d=\"M 16.375 26.25 C 16.375 25.56 16.935 25 17.625 25 L 17.625 25 C 18.315 25 18.875 25.56 18.875 26.25 L 18.875 33.75 C 18.875 34.44 18.315 35 17.625 35 L 17.625 35 C 16.935 35 16.375 34.44 16.375 33.75 Z\" fill=\"rgba(122, 129, 139, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(5.541 6.185) rotate(-60 1.25 5)\" fill=\"rgba(224, 225, 228, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(27.192 18.685) rotate(-60 1.25 5)\" fill=\"rgba(149, 154, 163, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(10.125 1.675) rotate(-30 1.25 5)\" fill=\"rgba(212, 214, 218, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(22.625 23.325) rotate(-30 1.25 5)\" fill=\"rgba(137, 142, 151, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(10.116 23.39) rotate(210 1.25 5)\" fill=\"rgba(109, 115, 129, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(22.616 1.739) rotate(210 1.25 5)\" fill=\"rgba(187, 190, 196, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(5.541 18.815) rotate(-120 1.25 5)\" fill=\"rgba(247, 248, 249, 1.00)\"></path><path d=\"M 0 1.25 C 0 0.56 0.56 0 1.25 0 L 1.25 0 C 1.94 0 2.5 0.56 2.5 1.25 L 2.5 8.75 C 2.5 9.44 1.94 10 1.25 10 L 1.25 10 C 0.56 10 0 9.44 0 8.75 Z\" transform=\"translate(27.192 6.315) rotate(-120 1.25 5)\" fill=\"rgba(175, 179, 185, 1.00)\"></path></g></svg>","visible":true,"intrinsicHeight":35,"intrinsicWidth":35,"dropShadows":[],"fill":{"r":0,"g":0,"b":0,"a":1,"h":0,"s":0,"l":0,"initialValue":"rgba(0,0,0,1)","roundA":1,"format":"rgb"}},"children":[],"name":"icon"}],"name":"Controls_Progress_Indicator"}],"name":"loadBlock"},{"componentClass":"Frame","props":{"key":"dyMwEFRt_","id":"id_dyMwEFRt_","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":343,"intrinsicHeight":52},"_border":{},"visible":true,"style":{"rotate":0,"overflow":"hidden"},"background":null,"_overrideForwardingDescription":{"id_F6dRFe6N6":"song"},"name":"lineElement"},"children":[{"componentClass":"Text","props":{"key":"F6dRFe6N6","id":"id_F6dRFe6N6","willChangeTransform":false,"_constraints":{"enabled":true,"autoSize":false},"height":20,"left":16,"right":16,"top":"50%","center":"y","rawHTML":"<div class='DraftEditor-alignLeft'><div data-offset-key=\"e51o9-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"e51o9-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:15px;letter-spacing:0px;line-height:1.2000000000000002\"><span data-text=\"true\">song</span></span></div></div>","alignment":"left","fonts":["__SystemDefault-400-normal__"],"opacity":1,"rotation":0,"visible":true,"autoSize":false,"calculatedSize":{"width":312,"height":18},"isEditable":false,"name":"song"},"name":"song"},{"componentClass":"Frame","props":{"key":"dZyZkSge8","id":"id_dZyZkSge8","willChangeTransform":false,"_constraints":{"enabled":true},"height":1,"left":0,"right":0,"bottom":0,"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"hsl(0, 0%, 90%)"},"background":{"r":229.5,"g":229.5,"b":229.5,"a":1,"h":0,"s":0,"l":0.9,"initialValue":"hsl(0, 0%, 90%)","roundA":1,"format":"hsl"}},"children":[],"name":null}],"name":"lineElement"},{"componentClass":"Frame","props":{"key":"KZrzqBTJC","id":"id_KZrzqBTJC","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":375,"intrinsicHeight":83},"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"hsla(0, 0%, 51%, 0.5)"},"background":{"r":130.05,"g":130.05,"b":130.05,"a":0.5,"h":0,"s":0,"l":0.51,"initialValue":"hsla(0, 0%, 51%, 0.5)","roundA":0.5,"format":"hsl"},"name":"navbar"},"children":[{"componentClass":"Text","props":{"key":"inpwO7c3N","id":"id_inpwO7c3N","willChangeTransform":false,"_constraints":{"enabled":true,"autoSize":true},"width":63,"height":16,"left":18,"top":26,"rawHTML":"<div data-offset-key=\"90f0i-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"90f0i-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:hsl(0, 0%, 0%);font-size:13px;letter-spacing:0px;line-height:1.3\"><span data-text=\"true\">SADDASD</span></span></div>","fonts":["__SystemDefault-400-normal__"],"opacity":1,"rotation":0,"visible":true,"autoSize":true,"calculatedSize":{"height":16,"width":63},"isEditable":false},"name":null}],"name":"navbar"},{"componentClass":"Frame","props":{"key":"l5abkKzfy","id":"id_l5abkKzfy","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":343,"intrinsicHeight":95},"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible"},"background":null,"_overrideForwardingDescription":{"id_t53tw1YCD":"body"},"name":"myAdmin"},"children":[{"componentClass":"Frame","props":{"key":"t53tw1YCD","id":"id_t53tw1YCD","willChangeTransform":false,"_constraints":{"enabled":true},"left":0,"right":0,"top":0,"bottom":20,"_border":{},"visible":true,"style":{"rotate":0,"overflow":"hidden","backgroundColor":"hsl(0, 0%, 100%)","borderRadius":"0 0 12px 12px","boxShadow":"0px 6px 16px 0px rgba(0, 0, 0, 0.08)"},"background":{"r":255,"g":255,"b":255,"a":1,"h":0,"s":0,"l":1,"initialValue":"hsl(0, 0%, 100%)","roundA":1,"format":"hsl"},"name":"body"},"children":[{"componentClass":"Frame","props":{"key":"ovNwPmyD4","id":"id_ovNwPmyD4","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":46,"intrinsicHeight":46},"width":46,"height":46,"left":11,"top":"42.66666666666667%","center":"y","_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","borderRadius":"50%"},"background":{"src":"rfti4p0qQhVdESpcMM8j53yMzAY.jpg","pixelWidth":3222,"pixelHeight":4400,"intrinsicWidth":1611,"intrinsicHeight":2200,"fit":"fill"}},"children":[],"name":null},{"componentClass":"Text","props":{"key":"YkiwoGNDf","id":"id_YkiwoGNDf","willChangeTransform":false,"_constraints":{"enabled":true,"autoSize":false},"height":22,"left":66,"right":20,"top":10,"rawHTML":"<div data-offset-key=\"91hif-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"91hif-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, &quot;System Default&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:17px;letter-spacing:0px;line-height:1.3;font-weight:600\"><span data-text=\"true\">Пренко Вероника Сергеевна</span></span></div>","fonts":["__SystemDefault-600-normal__"],"opacity":1,"rotation":0,"visible":true,"autoSize":false,"calculatedSize":{"width":258,"height":22},"isEditable":false},"name":null},{"componentClass":"Text","props":{"key":"tKZYNmJ60","id":"id_tKZYNmJ60","willChangeTransform":false,"_constraints":{"enabled":true,"autoSize":false},"height":16,"left":66,"right":20,"top":37,"rawHTML":"<div data-offset-key=\"91hif-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"91hif-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:rgb(102, 102, 102);font-size:12px;letter-spacing:0px;line-height:1.4\"><span data-text=\"true\">Пренко Вероника Сергеевна</span></span></div>","fonts":["__SystemDefault-400-normal__"],"opacity":1,"rotation":0,"visible":true,"autoSize":false,"calculatedSize":{"width":258,"height":16},"isEditable":false},"name":null}],"name":"body"},{"componentClass":"Frame","props":{"key":"nLsK7DlSi","id":"id_nLsK7DlSi","willChangeTransform":false,"_constraints":{"enabled":true},"width":1,"height":20,"left":"45.33527696793003%","bottom":0,"center":"x","_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"rgb(194, 194, 194)"},"background":{"r":194,"g":194,"b":194,"a":1,"h":0,"s":0,"l":0.7607843137254902,"initialValue":"rgb(194, 194, 194)","roundA":1,"format":"rgb"}},"children":[],"name":null}],"name":"myAdmin"},{"componentClass":"Frame","props":{"key":"c5Ug4GPVt","id":"id_c5Ug4GPVt","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":343,"intrinsicHeight":68},"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"rgb(255, 255, 255)","borderRadius":"12px","boxShadow":"0px 6px 16px 0px rgba(0, 0, 0, 0.08)"},"background":{"r":255,"g":255,"b":255,"a":1,"h":0,"s":0,"l":1,"initialValue":"rgb(255, 255, 255)","roundA":1,"format":"rgb"},"name":"myName"},"children":[{"componentClass":"Frame","props":{"key":"r53OkTh10","id":"id_r53OkTh10","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":46,"intrinsicHeight":46},"width":46,"left":10,"top":10,"bottom":12,"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","borderRadius":"50%"},"background":{"src":"WQICOjzB9x5m5PjFm3DeRFCoTc.jpg","pixelWidth":2647,"pixelHeight":3530,"intrinsicWidth":1323.5,"intrinsicHeight":1765,"fit":"fill"}},"children":[],"name":null},{"componentClass":"Text","props":{"key":"a3oRZvknh","id":"id_a3oRZvknh","willChangeTransform":false,"_constraints":{"enabled":true,"autoSize":false},"height":22,"left":66,"right":20,"top":10,"rawHTML":"<div data-offset-key=\"91hif-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"91hif-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, &quot;System Default&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:17px;letter-spacing:0px;line-height:1.3;font-weight:600\"><span data-text=\"true\">Пренко Вероника Сергеевна</span></span></div>","fonts":["__SystemDefault-600-normal__"],"opacity":1,"rotation":0,"visible":true,"autoSize":false,"calculatedSize":{"width":258,"height":22},"isEditable":false},"name":null},{"componentClass":"Text","props":{"key":"HlBQLrBhS","id":"id_HlBQLrBhS","willChangeTransform":false,"_constraints":{"enabled":true,"autoSize":false},"height":16,"left":66,"right":20,"top":37,"rawHTML":"<div data-offset-key=\"91hif-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"91hif-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:rgb(102, 102, 102);font-size:12px;letter-spacing:0px;line-height:1.4\"><span data-text=\"true\">Пренко Вероника Сергеевна</span></span></div>","fonts":["__SystemDefault-400-normal__"],"opacity":1,"rotation":0,"visible":true,"autoSize":false,"calculatedSize":{"width":258,"height":16},"isEditable":false},"name":null}],"name":"myName"},{"componentClass":"Frame","props":{"key":"XJ_OROGC6","id":"id_XJ_OROGC6","willChangeTransform":false,"_constraints":{"enabled":true,"intrinsicWidth":343,"intrinsicHeight":60},"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible"},"background":null,"name":"goToUsers"},"children":[{"componentClass":"Frame","props":{"key":"wbPEGKOm0","id":"id_wbPEGKOm0","willChangeTransform":false,"_constraints":{"enabled":true},"width":1,"height":10,"right":79,"top":0,"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"rgb(194, 194, 194)"},"background":{"r":194,"g":194,"b":194,"a":1,"h":0,"s":0,"l":0.7607843137254902,"initialValue":"rgb(194, 194, 194)","roundA":1,"format":"rgb"}},"children":[],"name":null},{"componentClass":"Frame","props":{"key":"HMFuQz9cq","id":"id_HMFuQz9cq","willChangeTransform":false,"_constraints":{"enabled":true},"width":1,"left":"50%","top":0,"bottom":0,"center":"x","_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"rgb(194, 194, 194)"},"background":{"r":194,"g":194,"b":194,"a":1,"h":0,"s":0,"l":0.7607843137254902,"initialValue":"rgb(194, 194, 194)","roundA":1,"format":"rgb"}},"children":[],"name":null},{"componentClass":"Frame","props":{"key":"g858gxwHS","id":"id_g858gxwHS","willChangeTransform":false,"_constraints":{"enabled":true},"width":159,"right":0,"top":10,"bottom":10,"_border":{},"visible":true,"style":{"rotate":0,"overflow":"visible","backgroundColor":"rgb(255, 255, 255)","borderRadius":"12px","boxShadow":"0px 6px 12px 0px rgba(0, 0, 0, 0.08)"},"background":{"r":255,"g":255,"b":255,"a":1,"h":0,"s":0,"l":1,"initialValue":"rgb(255, 255, 255)","roundA":1,"format":"rgb"}},"children":[{"componentClass":"Text","props":{"key":"QY7hDOK2C","id":"id_QY7hDOK2C","willChangeTransform":false,"_constraints":{"enabled":true,"autoSize":true},"width":77,"height":15,"left":15,"top":"48.75%","center":"y","rawHTML":"<div data-offset-key=\"c4qjo-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"c4qjo-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:13px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Сотрудники</span></span></div>","fonts":["__SystemDefault-400-normal__"],"opacity":1,"rotation":0,"visible":true,"autoSize":true,"calculatedSize":{"height":15,"width":77},"isEditable":false},"name":null}],"name":null}],"name":"goToUsers"}]});
 exports.GoToUsers = framer_1.createDesignComponent(canvas, "id_XJ_OROGC6", {}, 343, 60);
 exports.Item = framer_1.createDesignComponent(canvas, "id_wsDcMEjv8", {}, 271, 66);
 exports.LineElement = framer_1.createDesignComponent(canvas, "id_dyMwEFRt_", { song: "string" }, 343, 52);
@@ -5576,15 +5715,15 @@ exports.DeviceSkin = DeviceSkin;
                       {
                         "componentClass": "ComponentContainer",
                         "props": {
-                          "key": "L6p4H4Wwi",
-                          "id": "id_L6p4H4Wwi",
+                          "key": "SRVtMepWY",
+                          "id": "id_SRVtMepWY",
                           "willChangeTransform": false,
                           "_constraints": {
                             "enabled": true
                           },
                           "left": 0,
                           "right": 0,
-                          "top": 42,
+                          "top": 16,
                           "bottom": 0,
                           "componentIdentifier": "framer/Stack",
                           "visible": true,
@@ -5598,7 +5737,7 @@ exports.DeviceSkin = DeviceSkin;
                             "componentClass": "framer/Stack",
                             "props": {
                               "width": 375,
-                              "height": 1245,
+                              "height": 1271,
                               "background": null,
                               "_border": {},
                               "style": {
@@ -5607,7 +5746,7 @@ exports.DeviceSkin = DeviceSkin;
                               "direction": "vertical",
                               "distribution": "start",
                               "alignment": "center",
-                              "gap": 0,
+                              "gap": 10,
                               "padding": 0,
                               "paddingPerSide": false,
                               "paddingTop": 0,
@@ -5616,35 +5755,36 @@ exports.DeviceSkin = DeviceSkin;
                               "paddingLeft": 0,
                               "__fromCodeComponentNode": true,
                               "placeholders": null,
-                              "id": "L6p4H4Wwiframer/Stack",
-                              "key": "L6p4H4Wwiframer/Stack"
+                              "id": "SRVtMepWYframer/Stack",
+                              "key": "SRVtMepWYframer/Stack"
                             },
                             "children": [
                               {
                                 "componentClass": "Frame",
                                 "props": {
-                                  "key": "Pekc342L5",
-                                  "id": "id_Pekc342L5",
+                                  "key": "X3W4d8xmo",
+                                  "id": "id_X3W4d8xmo",
                                   "willChangeTransform": false,
                                   "_constraints": {
                                     "enabled": true
                                   },
                                   "width": 343,
-                                  "height": 233,
+                                  "height": 120,
                                   "_border": {},
                                   "visible": true,
                                   "style": {
                                     "rotate": 0,
                                     "overflow": "visible"
                                   },
-                                  "background": null
+                                  "background": null,
+                                  "name": "head"
                                 },
                                 "children": [
                                   {
                                     "componentClass": "ComponentContainer",
                                     "props": {
-                                      "key": "Tlju8BQCO",
-                                      "id": "id_Tlju8BQCO",
+                                      "key": "ABxXw0W6Q",
+                                      "id": "id_ABxXw0W6Q",
                                       "willChangeTransform": false,
                                       "_constraints": {
                                         "enabled": true
@@ -5653,7 +5793,7 @@ exports.DeviceSkin = DeviceSkin;
                                       "right": 0,
                                       "top": 0,
                                       "bottom": 0,
-                                      "componentIdentifier": "./TargetAcc.tsx_SimpleAccordions",
+                                      "componentIdentifier": "./NavHead.tsx_NavHead",
                                       "visible": true,
                                       "style": {
                                         "rotate": 0,
@@ -5662,30 +5802,28 @@ exports.DeviceSkin = DeviceSkin;
                                     },
                                     "children": [
                                       {
-                                        "componentClass": "./TargetAcc.tsx_SimpleAccordions",
+                                        "componentClass": "./NavHead.tsx_NavHead",
                                         "props": {
                                           "width": 343,
-                                          "height": 233,
-                                          "value": "a",
+                                          "height": 120,
                                           "placeholders": null,
-                                          "id": "Tlju8BQCO./TargetAcc.tsx_SimpleAccordions",
-                                          "key": "Tlju8BQCO./TargetAcc.tsx_SimpleAccordions"
+                                          "id": "ABxXw0W6Q./NavHead.tsx_NavHead",
+                                          "key": "ABxXw0W6Q./NavHead.tsx_NavHead"
                                         },
                                         "children": []
                                       }
                                     ],
-                                    "codeOverrideIdentifier": "./TargetAcc.tsx_ChatThread",
                                     "actions": {}
                                   }
                                 ],
-                                "codeOverrideIdentifier": "./TargetAcc.tsx_headH",
+                                "codeOverrideIdentifier": "./NavHead.tsx_headHeight",
                                 "actions": {}
                               },
                               {
                                 "componentClass": "Frame",
                                 "props": {
-                                  "key": "fKx5J0V87",
-                                  "id": "id_fKx5J0V87",
+                                  "key": "lpD3JGp1b",
+                                  "id": "id_lpD3JGp1b",
                                   "willChangeTransform": false,
                                   "_constraints": {
                                     "enabled": true
@@ -5705,8 +5843,8 @@ exports.DeviceSkin = DeviceSkin;
                                   {
                                     "componentClass": "Frame",
                                     "props": {
-                                      "key": "fKx5J0V87wbPEGKOm0",
-                                      "id": "id_fKx5J0V87wbPEGKOm0",
+                                      "key": "lpD3JGp1bwbPEGKOm0",
+                                      "id": "id_lpD3JGp1bwbPEGKOm0",
                                       "willChangeTransform": false,
                                       "_constraints": {
                                         "enabled": true
@@ -5741,8 +5879,8 @@ exports.DeviceSkin = DeviceSkin;
                                   {
                                     "componentClass": "Frame",
                                     "props": {
-                                      "key": "fKx5J0V87HMFuQz9cq",
-                                      "id": "id_fKx5J0V87HMFuQz9cq",
+                                      "key": "lpD3JGp1bHMFuQz9cq",
+                                      "id": "id_lpD3JGp1bHMFuQz9cq",
                                       "willChangeTransform": false,
                                       "_constraints": {
                                         "enabled": true
@@ -5778,8 +5916,8 @@ exports.DeviceSkin = DeviceSkin;
                                   {
                                     "componentClass": "Frame",
                                     "props": {
-                                      "key": "fKx5J0V87g858gxwHS",
-                                      "id": "id_fKx5J0V87g858gxwHS",
+                                      "key": "lpD3JGp1bg858gxwHS",
+                                      "id": "id_lpD3JGp1bg858gxwHS",
                                       "willChangeTransform": false,
                                       "_constraints": {
                                         "enabled": true
@@ -5814,8 +5952,8 @@ exports.DeviceSkin = DeviceSkin;
                                       {
                                         "componentClass": "Text",
                                         "props": {
-                                          "key": "fKx5J0V87QY7hDOK2C",
-                                          "id": "id_fKx5J0V87QY7hDOK2C",
+                                          "key": "lpD3JGp1bQY7hDOK2C",
+                                          "id": "id_lpD3JGp1bQY7hDOK2C",
                                           "willChangeTransform": false,
                                           "_constraints": {
                                             "enabled": true,
@@ -5853,34 +5991,46 @@ exports.DeviceSkin = DeviceSkin;
                                     "actions": {}
                                   }
                                 ],
-                                "codeOverrideIdentifier": "./TargetAcc.tsx_goToUsers",
+                                "codeOverrideIdentifier": "./ControlTree.tsx_goToList",
                                 "actions": {}
                               },
                               {
                                 "componentClass": "Frame",
                                 "props": {
-                                  "key": "uaqkAm7xA",
-                                  "id": "id_uaqkAm7xA",
+                                  "key": "iQ7AQG6xX",
+                                  "id": "id_iQ7AQG6xX",
                                   "willChangeTransform": false,
                                   "_constraints": {
                                     "enabled": true
                                   },
                                   "width": 343,
-                                  "height": 756,
+                                  "height": 671,
                                   "_border": {},
                                   "visible": true,
                                   "style": {
                                     "rotate": 0,
-                                    "overflow": "visible"
+                                    "overflow": "hidden",
+                                    "backgroundColor": "hsl(271, 55%, 40%)"
                                   },
-                                  "background": null
+                                  "background": {
+                                    "r": 103.86999999999995,
+                                    "g": 45.899999999999984,
+                                    "b": 158.10000000000002,
+                                    "a": 1,
+                                    "h": 271,
+                                    "s": 0.55,
+                                    "l": 0.4,
+                                    "initialValue": "hsl(271, 55%, 40%)",
+                                    "roundA": 1,
+                                    "format": "hsl"
+                                  }
                                 },
                                 "children": [
                                   {
                                     "componentClass": "ComponentContainer",
                                     "props": {
-                                      "key": "x0pAmRQCk",
-                                      "id": "id_x0pAmRQCk",
+                                      "key": "sbcOwXkRG",
+                                      "id": "id_sbcOwXkRG",
                                       "willChangeTransform": false,
                                       "_constraints": {
                                         "enabled": true
@@ -5889,7 +6039,7 @@ exports.DeviceSkin = DeviceSkin;
                                       "right": 0,
                                       "top": 0,
                                       "bottom": 0,
-                                      "componentIdentifier": "./TargetAcc.tsx_SimpleAccordions",
+                                      "componentIdentifier": "./NavBody.tsx_NavBody",
                                       "visible": true,
                                       "style": {
                                         "rotate": 0,
@@ -5898,22 +6048,350 @@ exports.DeviceSkin = DeviceSkin;
                                     },
                                     "children": [
                                       {
-                                        "componentClass": "./TargetAcc.tsx_SimpleAccordions",
+                                        "componentClass": "./NavBody.tsx_NavBody",
                                         "props": {
                                           "width": 343,
-                                          "height": 756,
-                                          "value": "b",
+                                          "height": 671,
                                           "placeholders": null,
-                                          "id": "x0pAmRQCk./TargetAcc.tsx_SimpleAccordions",
-                                          "key": "x0pAmRQCk./TargetAcc.tsx_SimpleAccordions"
+                                          "id": "sbcOwXkRG./NavBody.tsx_NavBody",
+                                          "key": "sbcOwXkRG./NavBody.tsx_NavBody"
                                         },
                                         "children": []
                                       }
                                     ],
-                                    "codeOverrideIdentifier": "./TargetAcc.tsx_BodyEffects",
                                     "actions": {}
                                   }
                                 ],
+                                "codeOverrideIdentifier": "./NavBody.tsx_bodyHeight",
+                                "actions": {}
+                              },
+                              {
+                                "componentClass": "Frame",
+                                "props": {
+                                  "key": "Hf7sPx4up",
+                                  "id": "id_Hf7sPx4up",
+                                  "willChangeTransform": false,
+                                  "_constraints": {
+                                    "enabled": true
+                                  },
+                                  "width": 343,
+                                  "height": 95,
+                                  "_border": {},
+                                  "visible": true,
+                                  "style": {
+                                    "rotate": 0,
+                                    "overflow": "visible"
+                                  },
+                                  "background": null,
+                                  "_overrideForwardingDescription": {
+                                    "id_Hf7sPx4upt53tw1YCD": "body"
+                                  },
+                                  "name": "myAdmin"
+                                },
+                                "children": [
+                                  {
+                                    "componentClass": "Frame",
+                                    "props": {
+                                      "key": "Hf7sPx4upt53tw1YCD",
+                                      "id": "id_Hf7sPx4upt53tw1YCD",
+                                      "willChangeTransform": false,
+                                      "_constraints": {
+                                        "enabled": true
+                                      },
+                                      "left": 0,
+                                      "right": 0,
+                                      "top": 0,
+                                      "bottom": 20,
+                                      "_border": {},
+                                      "visible": true,
+                                      "style": {
+                                        "rotate": 0,
+                                        "overflow": "hidden",
+                                        "backgroundColor": "hsl(0, 0%, 100%)",
+                                        "borderRadius": "0 0 12px 12px",
+                                        "boxShadow": "0px 6px 16px 0px rgba(0, 0, 0, 0.08)"
+                                      },
+                                      "background": {
+                                        "r": 255,
+                                        "g": 255,
+                                        "b": 255,
+                                        "a": 1,
+                                        "h": 0,
+                                        "s": 0,
+                                        "l": 1,
+                                        "initialValue": "hsl(0, 0%, 100%)",
+                                        "roundA": 1,
+                                        "format": "hsl"
+                                      },
+                                      "name": "body"
+                                    },
+                                    "children": [
+                                      {
+                                        "componentClass": "Frame",
+                                        "props": {
+                                          "key": "Hf7sPx4upovNwPmyD4",
+                                          "id": "id_Hf7sPx4upovNwPmyD4",
+                                          "willChangeTransform": false,
+                                          "_constraints": {
+                                            "enabled": true,
+                                            "intrinsicWidth": 46,
+                                            "intrinsicHeight": 46
+                                          },
+                                          "width": 46,
+                                          "height": 46,
+                                          "left": 11,
+                                          "top": "42.66666666666667%",
+                                          "center": "y",
+                                          "_border": {},
+                                          "visible": true,
+                                          "style": {
+                                            "rotate": 0,
+                                            "overflow": "visible",
+                                            "borderRadius": "50%"
+                                          },
+                                          "background": {
+                                            "src": "rfti4p0qQhVdESpcMM8j53yMzAY.jpg",
+                                            "pixelWidth": 3222,
+                                            "pixelHeight": 4400,
+                                            "intrinsicWidth": 1611,
+                                            "intrinsicHeight": 2200,
+                                            "fit": "fill"
+                                          }
+                                        },
+                                        "children": [],
+                                        "actions": {}
+                                      },
+                                      {
+                                        "componentClass": "Text",
+                                        "props": {
+                                          "key": "Hf7sPx4upYkiwoGNDf",
+                                          "id": "id_Hf7sPx4upYkiwoGNDf",
+                                          "willChangeTransform": false,
+                                          "_constraints": {
+                                            "enabled": true,
+                                            "autoSize": false
+                                          },
+                                          "height": 22,
+                                          "left": 66,
+                                          "right": 20,
+                                          "top": 10,
+                                          "rawHTML": "<div data-offset-key=\"91hif-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"91hif-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, &quot;System Default&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:17px;letter-spacing:0px;line-height:1.3;font-weight:600\"><span data-text=\"true\">Пренко Вероника Сергеевна</span></span></div>",
+                                          "fonts": [
+                                            "__SystemDefault-600-normal__"
+                                          ],
+                                          "opacity": 1,
+                                          "rotation": 0,
+                                          "visible": true,
+                                          "autoSize": false,
+                                          "calculatedSize": {
+                                            "width": 258,
+                                            "height": 22
+                                          },
+                                          "isEditable": false
+                                        }
+                                      },
+                                      {
+                                        "componentClass": "Text",
+                                        "props": {
+                                          "key": "Hf7sPx4uptKZYNmJ60",
+                                          "id": "id_Hf7sPx4uptKZYNmJ60",
+                                          "willChangeTransform": false,
+                                          "_constraints": {
+                                            "enabled": true,
+                                            "autoSize": false
+                                          },
+                                          "height": 16,
+                                          "left": 66,
+                                          "right": 20,
+                                          "top": 37,
+                                          "rawHTML": "<div data-offset-key=\"91hif-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"91hif-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:rgb(102, 102, 102);font-size:12px;letter-spacing:0px;line-height:1.4\"><span data-text=\"true\">Пренко Вероника Сергеевна</span></span></div>",
+                                          "fonts": [
+                                            "__SystemDefault-400-normal__"
+                                          ],
+                                          "opacity": 1,
+                                          "rotation": 0,
+                                          "visible": true,
+                                          "autoSize": false,
+                                          "calculatedSize": {
+                                            "width": 258,
+                                            "height": 16
+                                          },
+                                          "isEditable": false
+                                        }
+                                      }
+                                    ],
+                                    "actions": {}
+                                  },
+                                  {
+                                    "componentClass": "Frame",
+                                    "props": {
+                                      "key": "Hf7sPx4upnLsK7DlSi",
+                                      "id": "id_Hf7sPx4upnLsK7DlSi",
+                                      "willChangeTransform": false,
+                                      "_constraints": {
+                                        "enabled": true
+                                      },
+                                      "width": 1,
+                                      "height": 20,
+                                      "left": "45.33527696793003%",
+                                      "bottom": 0,
+                                      "center": "x",
+                                      "_border": {},
+                                      "visible": true,
+                                      "style": {
+                                        "rotate": 0,
+                                        "overflow": "visible",
+                                        "backgroundColor": "rgb(194, 194, 194)"
+                                      },
+                                      "background": {
+                                        "r": 194,
+                                        "g": 194,
+                                        "b": 194,
+                                        "a": 1,
+                                        "h": 0,
+                                        "s": 0,
+                                        "l": 0.7607843137254902,
+                                        "initialValue": "rgb(194, 194, 194)",
+                                        "roundA": 1,
+                                        "format": "rgb"
+                                      }
+                                    },
+                                    "children": [],
+                                    "actions": {}
+                                  }
+                                ],
+                                "codeOverrideIdentifier": "./ControlTree.tsx_myAdminShow",
+                                "actions": {}
+                              },
+                              {
+                                "componentClass": "Frame",
+                                "props": {
+                                  "key": "jee8QkcQt",
+                                  "id": "id_jee8QkcQt",
+                                  "willChangeTransform": false,
+                                  "_constraints": {
+                                    "enabled": true
+                                  },
+                                  "width": 343,
+                                  "height": 68,
+                                  "_border": {},
+                                  "visible": true,
+                                  "style": {
+                                    "rotate": 0,
+                                    "overflow": "visible",
+                                    "backgroundColor": "rgb(255, 255, 255)",
+                                    "borderRadius": "12px",
+                                    "boxShadow": "0px 6px 16px 0px rgba(0, 0, 0, 0.08)"
+                                  },
+                                  "background": {
+                                    "r": 255,
+                                    "g": 255,
+                                    "b": 255,
+                                    "a": 1,
+                                    "h": 0,
+                                    "s": 0,
+                                    "l": 1,
+                                    "initialValue": "rgb(255, 255, 255)",
+                                    "roundA": 1,
+                                    "format": "rgb"
+                                  },
+                                  "name": "myName"
+                                },
+                                "children": [
+                                  {
+                                    "componentClass": "Frame",
+                                    "props": {
+                                      "key": "jee8QkcQtr53OkTh10",
+                                      "id": "id_jee8QkcQtr53OkTh10",
+                                      "willChangeTransform": false,
+                                      "_constraints": {
+                                        "enabled": true,
+                                        "intrinsicWidth": 46,
+                                        "intrinsicHeight": 46
+                                      },
+                                      "width": 46,
+                                      "left": 10,
+                                      "top": 10,
+                                      "bottom": 12,
+                                      "_border": {},
+                                      "visible": true,
+                                      "style": {
+                                        "rotate": 0,
+                                        "overflow": "visible",
+                                        "borderRadius": "50%"
+                                      },
+                                      "background": {
+                                        "src": "WQICOjzB9x5m5PjFm3DeRFCoTc.jpg",
+                                        "pixelWidth": 2647,
+                                        "pixelHeight": 3530,
+                                        "intrinsicWidth": 1323.5,
+                                        "intrinsicHeight": 1765,
+                                        "fit": "fill"
+                                      }
+                                    },
+                                    "children": [],
+                                    "actions": {}
+                                  },
+                                  {
+                                    "componentClass": "Text",
+                                    "props": {
+                                      "key": "jee8QkcQta3oRZvknh",
+                                      "id": "id_jee8QkcQta3oRZvknh",
+                                      "willChangeTransform": false,
+                                      "_constraints": {
+                                        "enabled": true,
+                                        "autoSize": false
+                                      },
+                                      "height": 22,
+                                      "left": 66,
+                                      "right": 20,
+                                      "top": 10,
+                                      "rawHTML": "<div data-offset-key=\"91hif-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"91hif-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, &quot;System Default&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:17px;letter-spacing:0px;line-height:1.3;font-weight:600\"><span data-text=\"true\">Пренко Вероника Сергеевна</span></span></div>",
+                                      "fonts": [
+                                        "__SystemDefault-600-normal__"
+                                      ],
+                                      "opacity": 1,
+                                      "rotation": 0,
+                                      "visible": true,
+                                      "autoSize": false,
+                                      "calculatedSize": {
+                                        "width": 258,
+                                        "height": 22
+                                      },
+                                      "isEditable": false
+                                    }
+                                  },
+                                  {
+                                    "componentClass": "Text",
+                                    "props": {
+                                      "key": "jee8QkcQtHlBQLrBhS",
+                                      "id": "id_jee8QkcQtHlBQLrBhS",
+                                      "willChangeTransform": false,
+                                      "_constraints": {
+                                        "enabled": true,
+                                        "autoSize": false
+                                      },
+                                      "height": 16,
+                                      "left": 66,
+                                      "right": 20,
+                                      "top": 37,
+                                      "rawHTML": "<div data-offset-key=\"91hif-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"91hif-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:rgb(102, 102, 102);font-size:12px;letter-spacing:0px;line-height:1.4\"><span data-text=\"true\">Пренко Вероника Сергеевна</span></span></div>",
+                                      "fonts": [
+                                        "__SystemDefault-400-normal__"
+                                      ],
+                                      "opacity": 1,
+                                      "rotation": 0,
+                                      "visible": true,
+                                      "autoSize": false,
+                                      "calculatedSize": {
+                                        "width": 258,
+                                        "height": 16
+                                      },
+                                      "isEditable": false
+                                    }
+                                  }
+                                ],
+                                "codeOverrideIdentifier": "./ControlTree.tsx_shutTree",
                                 "actions": {}
                               }
                             ]
@@ -5966,15 +6444,15 @@ exports.DeviceSkin = DeviceSkin;
                     {
                       "componentClass": "ComponentContainer",
                       "props": {
-                        "key": "L6p4H4Wwi",
-                        "id": "id_L6p4H4Wwi",
+                        "key": "SRVtMepWY",
+                        "id": "id_SRVtMepWY",
                         "willChangeTransform": false,
                         "_constraints": {
                           "enabled": true
                         },
                         "left": 0,
                         "right": 0,
-                        "top": 42,
+                        "top": 16,
                         "bottom": 0,
                         "componentIdentifier": "framer/Stack",
                         "visible": true,
@@ -5988,7 +6466,7 @@ exports.DeviceSkin = DeviceSkin;
                           "componentClass": "framer/Stack",
                           "props": {
                             "width": 375,
-                            "height": 1245,
+                            "height": 1271,
                             "background": null,
                             "_border": {},
                             "style": {
@@ -5997,7 +6475,7 @@ exports.DeviceSkin = DeviceSkin;
                             "direction": "vertical",
                             "distribution": "start",
                             "alignment": "center",
-                            "gap": 0,
+                            "gap": 10,
                             "padding": 0,
                             "paddingPerSide": false,
                             "paddingTop": 0,
@@ -6006,35 +6484,36 @@ exports.DeviceSkin = DeviceSkin;
                             "paddingLeft": 0,
                             "__fromCodeComponentNode": true,
                             "placeholders": null,
-                            "id": "L6p4H4Wwiframer/Stack",
-                            "key": "L6p4H4Wwiframer/Stack"
+                            "id": "SRVtMepWYframer/Stack",
+                            "key": "SRVtMepWYframer/Stack"
                           },
                           "children": [
                             {
                               "componentClass": "Frame",
                               "props": {
-                                "key": "Pekc342L5",
-                                "id": "id_Pekc342L5",
+                                "key": "X3W4d8xmo",
+                                "id": "id_X3W4d8xmo",
                                 "willChangeTransform": false,
                                 "_constraints": {
                                   "enabled": true
                                 },
                                 "width": 343,
-                                "height": 233,
+                                "height": 120,
                                 "_border": {},
                                 "visible": true,
                                 "style": {
                                   "rotate": 0,
                                   "overflow": "visible"
                                 },
-                                "background": null
+                                "background": null,
+                                "name": "head"
                               },
                               "children": [
                                 {
                                   "componentClass": "ComponentContainer",
                                   "props": {
-                                    "key": "Tlju8BQCO",
-                                    "id": "id_Tlju8BQCO",
+                                    "key": "ABxXw0W6Q",
+                                    "id": "id_ABxXw0W6Q",
                                     "willChangeTransform": false,
                                     "_constraints": {
                                       "enabled": true
@@ -6043,7 +6522,7 @@ exports.DeviceSkin = DeviceSkin;
                                     "right": 0,
                                     "top": 0,
                                     "bottom": 0,
-                                    "componentIdentifier": "./TargetAcc.tsx_SimpleAccordions",
+                                    "componentIdentifier": "./NavHead.tsx_NavHead",
                                     "visible": true,
                                     "style": {
                                       "rotate": 0,
@@ -6052,30 +6531,28 @@ exports.DeviceSkin = DeviceSkin;
                                   },
                                   "children": [
                                     {
-                                      "componentClass": "./TargetAcc.tsx_SimpleAccordions",
+                                      "componentClass": "./NavHead.tsx_NavHead",
                                       "props": {
                                         "width": 343,
-                                        "height": 233,
-                                        "value": "a",
+                                        "height": 120,
                                         "placeholders": null,
-                                        "id": "Tlju8BQCO./TargetAcc.tsx_SimpleAccordions",
-                                        "key": "Tlju8BQCO./TargetAcc.tsx_SimpleAccordions"
+                                        "id": "ABxXw0W6Q./NavHead.tsx_NavHead",
+                                        "key": "ABxXw0W6Q./NavHead.tsx_NavHead"
                                       },
                                       "children": []
                                     }
                                   ],
-                                  "codeOverrideIdentifier": "./TargetAcc.tsx_ChatThread",
                                   "actions": {}
                                 }
                               ],
-                              "codeOverrideIdentifier": "./TargetAcc.tsx_headH",
+                              "codeOverrideIdentifier": "./NavHead.tsx_headHeight",
                               "actions": {}
                             },
                             {
                               "componentClass": "Frame",
                               "props": {
-                                "key": "fKx5J0V87",
-                                "id": "id_fKx5J0V87",
+                                "key": "lpD3JGp1b",
+                                "id": "id_lpD3JGp1b",
                                 "willChangeTransform": false,
                                 "_constraints": {
                                   "enabled": true
@@ -6095,8 +6572,8 @@ exports.DeviceSkin = DeviceSkin;
                                 {
                                   "componentClass": "Frame",
                                   "props": {
-                                    "key": "fKx5J0V87wbPEGKOm0",
-                                    "id": "id_fKx5J0V87wbPEGKOm0",
+                                    "key": "lpD3JGp1bwbPEGKOm0",
+                                    "id": "id_lpD3JGp1bwbPEGKOm0",
                                     "willChangeTransform": false,
                                     "_constraints": {
                                       "enabled": true
@@ -6131,8 +6608,8 @@ exports.DeviceSkin = DeviceSkin;
                                 {
                                   "componentClass": "Frame",
                                   "props": {
-                                    "key": "fKx5J0V87HMFuQz9cq",
-                                    "id": "id_fKx5J0V87HMFuQz9cq",
+                                    "key": "lpD3JGp1bHMFuQz9cq",
+                                    "id": "id_lpD3JGp1bHMFuQz9cq",
                                     "willChangeTransform": false,
                                     "_constraints": {
                                       "enabled": true
@@ -6168,8 +6645,8 @@ exports.DeviceSkin = DeviceSkin;
                                 {
                                   "componentClass": "Frame",
                                   "props": {
-                                    "key": "fKx5J0V87g858gxwHS",
-                                    "id": "id_fKx5J0V87g858gxwHS",
+                                    "key": "lpD3JGp1bg858gxwHS",
+                                    "id": "id_lpD3JGp1bg858gxwHS",
                                     "willChangeTransform": false,
                                     "_constraints": {
                                       "enabled": true
@@ -6204,8 +6681,8 @@ exports.DeviceSkin = DeviceSkin;
                                     {
                                       "componentClass": "Text",
                                       "props": {
-                                        "key": "fKx5J0V87QY7hDOK2C",
-                                        "id": "id_fKx5J0V87QY7hDOK2C",
+                                        "key": "lpD3JGp1bQY7hDOK2C",
+                                        "id": "id_lpD3JGp1bQY7hDOK2C",
                                         "willChangeTransform": false,
                                         "_constraints": {
                                           "enabled": true,
@@ -6243,34 +6720,46 @@ exports.DeviceSkin = DeviceSkin;
                                   "actions": {}
                                 }
                               ],
-                              "codeOverrideIdentifier": "./TargetAcc.tsx_goToUsers",
+                              "codeOverrideIdentifier": "./ControlTree.tsx_goToList",
                               "actions": {}
                             },
                             {
                               "componentClass": "Frame",
                               "props": {
-                                "key": "uaqkAm7xA",
-                                "id": "id_uaqkAm7xA",
+                                "key": "iQ7AQG6xX",
+                                "id": "id_iQ7AQG6xX",
                                 "willChangeTransform": false,
                                 "_constraints": {
                                   "enabled": true
                                 },
                                 "width": 343,
-                                "height": 756,
+                                "height": 671,
                                 "_border": {},
                                 "visible": true,
                                 "style": {
                                   "rotate": 0,
-                                  "overflow": "visible"
+                                  "overflow": "hidden",
+                                  "backgroundColor": "hsl(271, 55%, 40%)"
                                 },
-                                "background": null
+                                "background": {
+                                  "r": 103.86999999999995,
+                                  "g": 45.899999999999984,
+                                  "b": 158.10000000000002,
+                                  "a": 1,
+                                  "h": 271,
+                                  "s": 0.55,
+                                  "l": 0.4,
+                                  "initialValue": "hsl(271, 55%, 40%)",
+                                  "roundA": 1,
+                                  "format": "hsl"
+                                }
                               },
                               "children": [
                                 {
                                   "componentClass": "ComponentContainer",
                                   "props": {
-                                    "key": "x0pAmRQCk",
-                                    "id": "id_x0pAmRQCk",
+                                    "key": "sbcOwXkRG",
+                                    "id": "id_sbcOwXkRG",
                                     "willChangeTransform": false,
                                     "_constraints": {
                                       "enabled": true
@@ -6279,7 +6768,7 @@ exports.DeviceSkin = DeviceSkin;
                                     "right": 0,
                                     "top": 0,
                                     "bottom": 0,
-                                    "componentIdentifier": "./TargetAcc.tsx_SimpleAccordions",
+                                    "componentIdentifier": "./NavBody.tsx_NavBody",
                                     "visible": true,
                                     "style": {
                                       "rotate": 0,
@@ -6288,22 +6777,350 @@ exports.DeviceSkin = DeviceSkin;
                                   },
                                   "children": [
                                     {
-                                      "componentClass": "./TargetAcc.tsx_SimpleAccordions",
+                                      "componentClass": "./NavBody.tsx_NavBody",
                                       "props": {
                                         "width": 343,
-                                        "height": 756,
-                                        "value": "b",
+                                        "height": 671,
                                         "placeholders": null,
-                                        "id": "x0pAmRQCk./TargetAcc.tsx_SimpleAccordions",
-                                        "key": "x0pAmRQCk./TargetAcc.tsx_SimpleAccordions"
+                                        "id": "sbcOwXkRG./NavBody.tsx_NavBody",
+                                        "key": "sbcOwXkRG./NavBody.tsx_NavBody"
                                       },
                                       "children": []
                                     }
                                   ],
-                                  "codeOverrideIdentifier": "./TargetAcc.tsx_BodyEffects",
                                   "actions": {}
                                 }
                               ],
+                              "codeOverrideIdentifier": "./NavBody.tsx_bodyHeight",
+                              "actions": {}
+                            },
+                            {
+                              "componentClass": "Frame",
+                              "props": {
+                                "key": "Hf7sPx4up",
+                                "id": "id_Hf7sPx4up",
+                                "willChangeTransform": false,
+                                "_constraints": {
+                                  "enabled": true
+                                },
+                                "width": 343,
+                                "height": 95,
+                                "_border": {},
+                                "visible": true,
+                                "style": {
+                                  "rotate": 0,
+                                  "overflow": "visible"
+                                },
+                                "background": null,
+                                "_overrideForwardingDescription": {
+                                  "id_Hf7sPx4upt53tw1YCD": "body"
+                                },
+                                "name": "myAdmin"
+                              },
+                              "children": [
+                                {
+                                  "componentClass": "Frame",
+                                  "props": {
+                                    "key": "Hf7sPx4upt53tw1YCD",
+                                    "id": "id_Hf7sPx4upt53tw1YCD",
+                                    "willChangeTransform": false,
+                                    "_constraints": {
+                                      "enabled": true
+                                    },
+                                    "left": 0,
+                                    "right": 0,
+                                    "top": 0,
+                                    "bottom": 20,
+                                    "_border": {},
+                                    "visible": true,
+                                    "style": {
+                                      "rotate": 0,
+                                      "overflow": "hidden",
+                                      "backgroundColor": "hsl(0, 0%, 100%)",
+                                      "borderRadius": "0 0 12px 12px",
+                                      "boxShadow": "0px 6px 16px 0px rgba(0, 0, 0, 0.08)"
+                                    },
+                                    "background": {
+                                      "r": 255,
+                                      "g": 255,
+                                      "b": 255,
+                                      "a": 1,
+                                      "h": 0,
+                                      "s": 0,
+                                      "l": 1,
+                                      "initialValue": "hsl(0, 0%, 100%)",
+                                      "roundA": 1,
+                                      "format": "hsl"
+                                    },
+                                    "name": "body"
+                                  },
+                                  "children": [
+                                    {
+                                      "componentClass": "Frame",
+                                      "props": {
+                                        "key": "Hf7sPx4upovNwPmyD4",
+                                        "id": "id_Hf7sPx4upovNwPmyD4",
+                                        "willChangeTransform": false,
+                                        "_constraints": {
+                                          "enabled": true,
+                                          "intrinsicWidth": 46,
+                                          "intrinsicHeight": 46
+                                        },
+                                        "width": 46,
+                                        "height": 46,
+                                        "left": 11,
+                                        "top": "42.66666666666667%",
+                                        "center": "y",
+                                        "_border": {},
+                                        "visible": true,
+                                        "style": {
+                                          "rotate": 0,
+                                          "overflow": "visible",
+                                          "borderRadius": "50%"
+                                        },
+                                        "background": {
+                                          "src": "rfti4p0qQhVdESpcMM8j53yMzAY.jpg",
+                                          "pixelWidth": 3222,
+                                          "pixelHeight": 4400,
+                                          "intrinsicWidth": 1611,
+                                          "intrinsicHeight": 2200,
+                                          "fit": "fill"
+                                        }
+                                      },
+                                      "children": [],
+                                      "actions": {}
+                                    },
+                                    {
+                                      "componentClass": "Text",
+                                      "props": {
+                                        "key": "Hf7sPx4upYkiwoGNDf",
+                                        "id": "id_Hf7sPx4upYkiwoGNDf",
+                                        "willChangeTransform": false,
+                                        "_constraints": {
+                                          "enabled": true,
+                                          "autoSize": false
+                                        },
+                                        "height": 22,
+                                        "left": 66,
+                                        "right": 20,
+                                        "top": 10,
+                                        "rawHTML": "<div data-offset-key=\"91hif-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"91hif-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, &quot;System Default&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:17px;letter-spacing:0px;line-height:1.3;font-weight:600\"><span data-text=\"true\">Пренко Вероника Сергеевна</span></span></div>",
+                                        "fonts": [
+                                          "__SystemDefault-600-normal__"
+                                        ],
+                                        "opacity": 1,
+                                        "rotation": 0,
+                                        "visible": true,
+                                        "autoSize": false,
+                                        "calculatedSize": {
+                                          "width": 258,
+                                          "height": 22
+                                        },
+                                        "isEditable": false
+                                      }
+                                    },
+                                    {
+                                      "componentClass": "Text",
+                                      "props": {
+                                        "key": "Hf7sPx4uptKZYNmJ60",
+                                        "id": "id_Hf7sPx4uptKZYNmJ60",
+                                        "willChangeTransform": false,
+                                        "_constraints": {
+                                          "enabled": true,
+                                          "autoSize": false
+                                        },
+                                        "height": 16,
+                                        "left": 66,
+                                        "right": 20,
+                                        "top": 37,
+                                        "rawHTML": "<div data-offset-key=\"91hif-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"91hif-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:rgb(102, 102, 102);font-size:12px;letter-spacing:0px;line-height:1.4\"><span data-text=\"true\">Пренко Вероника Сергеевна</span></span></div>",
+                                        "fonts": [
+                                          "__SystemDefault-400-normal__"
+                                        ],
+                                        "opacity": 1,
+                                        "rotation": 0,
+                                        "visible": true,
+                                        "autoSize": false,
+                                        "calculatedSize": {
+                                          "width": 258,
+                                          "height": 16
+                                        },
+                                        "isEditable": false
+                                      }
+                                    }
+                                  ],
+                                  "actions": {}
+                                },
+                                {
+                                  "componentClass": "Frame",
+                                  "props": {
+                                    "key": "Hf7sPx4upnLsK7DlSi",
+                                    "id": "id_Hf7sPx4upnLsK7DlSi",
+                                    "willChangeTransform": false,
+                                    "_constraints": {
+                                      "enabled": true
+                                    },
+                                    "width": 1,
+                                    "height": 20,
+                                    "left": "45.33527696793003%",
+                                    "bottom": 0,
+                                    "center": "x",
+                                    "_border": {},
+                                    "visible": true,
+                                    "style": {
+                                      "rotate": 0,
+                                      "overflow": "visible",
+                                      "backgroundColor": "rgb(194, 194, 194)"
+                                    },
+                                    "background": {
+                                      "r": 194,
+                                      "g": 194,
+                                      "b": 194,
+                                      "a": 1,
+                                      "h": 0,
+                                      "s": 0,
+                                      "l": 0.7607843137254902,
+                                      "initialValue": "rgb(194, 194, 194)",
+                                      "roundA": 1,
+                                      "format": "rgb"
+                                    }
+                                  },
+                                  "children": [],
+                                  "actions": {}
+                                }
+                              ],
+                              "codeOverrideIdentifier": "./ControlTree.tsx_myAdminShow",
+                              "actions": {}
+                            },
+                            {
+                              "componentClass": "Frame",
+                              "props": {
+                                "key": "jee8QkcQt",
+                                "id": "id_jee8QkcQt",
+                                "willChangeTransform": false,
+                                "_constraints": {
+                                  "enabled": true
+                                },
+                                "width": 343,
+                                "height": 68,
+                                "_border": {},
+                                "visible": true,
+                                "style": {
+                                  "rotate": 0,
+                                  "overflow": "visible",
+                                  "backgroundColor": "rgb(255, 255, 255)",
+                                  "borderRadius": "12px",
+                                  "boxShadow": "0px 6px 16px 0px rgba(0, 0, 0, 0.08)"
+                                },
+                                "background": {
+                                  "r": 255,
+                                  "g": 255,
+                                  "b": 255,
+                                  "a": 1,
+                                  "h": 0,
+                                  "s": 0,
+                                  "l": 1,
+                                  "initialValue": "rgb(255, 255, 255)",
+                                  "roundA": 1,
+                                  "format": "rgb"
+                                },
+                                "name": "myName"
+                              },
+                              "children": [
+                                {
+                                  "componentClass": "Frame",
+                                  "props": {
+                                    "key": "jee8QkcQtr53OkTh10",
+                                    "id": "id_jee8QkcQtr53OkTh10",
+                                    "willChangeTransform": false,
+                                    "_constraints": {
+                                      "enabled": true,
+                                      "intrinsicWidth": 46,
+                                      "intrinsicHeight": 46
+                                    },
+                                    "width": 46,
+                                    "left": 10,
+                                    "top": 10,
+                                    "bottom": 12,
+                                    "_border": {},
+                                    "visible": true,
+                                    "style": {
+                                      "rotate": 0,
+                                      "overflow": "visible",
+                                      "borderRadius": "50%"
+                                    },
+                                    "background": {
+                                      "src": "WQICOjzB9x5m5PjFm3DeRFCoTc.jpg",
+                                      "pixelWidth": 2647,
+                                      "pixelHeight": 3530,
+                                      "intrinsicWidth": 1323.5,
+                                      "intrinsicHeight": 1765,
+                                      "fit": "fill"
+                                    }
+                                  },
+                                  "children": [],
+                                  "actions": {}
+                                },
+                                {
+                                  "componentClass": "Text",
+                                  "props": {
+                                    "key": "jee8QkcQta3oRZvknh",
+                                    "id": "id_jee8QkcQta3oRZvknh",
+                                    "willChangeTransform": false,
+                                    "_constraints": {
+                                      "enabled": true,
+                                      "autoSize": false
+                                    },
+                                    "height": 22,
+                                    "left": 66,
+                                    "right": 20,
+                                    "top": 10,
+                                    "rawHTML": "<div data-offset-key=\"91hif-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"91hif-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, &quot;System Default&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:17px;letter-spacing:0px;line-height:1.3;font-weight:600\"><span data-text=\"true\">Пренко Вероника Сергеевна</span></span></div>",
+                                    "fonts": [
+                                      "__SystemDefault-600-normal__"
+                                    ],
+                                    "opacity": 1,
+                                    "rotation": 0,
+                                    "visible": true,
+                                    "autoSize": false,
+                                    "calculatedSize": {
+                                      "width": 258,
+                                      "height": 22
+                                    },
+                                    "isEditable": false
+                                  }
+                                },
+                                {
+                                  "componentClass": "Text",
+                                  "props": {
+                                    "key": "jee8QkcQtHlBQLrBhS",
+                                    "id": "id_jee8QkcQtHlBQLrBhS",
+                                    "willChangeTransform": false,
+                                    "_constraints": {
+                                      "enabled": true,
+                                      "autoSize": false
+                                    },
+                                    "height": 16,
+                                    "left": 66,
+                                    "right": 20,
+                                    "top": 37,
+                                    "rawHTML": "<div data-offset-key=\"91hif-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"91hif-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:rgb(102, 102, 102);font-size:12px;letter-spacing:0px;line-height:1.4\"><span data-text=\"true\">Пренко Вероника Сергеевна</span></span></div>",
+                                    "fonts": [
+                                      "__SystemDefault-400-normal__"
+                                    ],
+                                    "opacity": 1,
+                                    "rotation": 0,
+                                    "visible": true,
+                                    "autoSize": false,
+                                    "calculatedSize": {
+                                      "width": 258,
+                                      "height": 16
+                                    },
+                                    "isEditable": false
+                                  }
+                                }
+                              ],
+                              "codeOverrideIdentifier": "./ControlTree.tsx_shutTree",
                               "actions": {}
                             }
                           ]
@@ -6317,7 +7134,7 @@ exports.DeviceSkin = DeviceSkin;
               ]
             }
           ],
-          "codeOverrideIdentifier": "./TargetAcc.tsx_Scroll",
+          "codeOverrideIdentifier": "./ControlTree.tsx_Scroll",
           "actions": {}
         },
         {
