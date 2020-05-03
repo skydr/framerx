@@ -1,0 +1,22 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8",
+		"framer": "1.1.7"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "ea06ad45-13ab-450f-8620-365fde2bd977",
+		"displayName": "iPhone 11 Pro"
+	},
+	"author": "Benjamin den Boer",
+	"dependencies": {
+		"@framer/framer.default": "^1.11.0"
+	},
+	"name": "@framer/benjamin.iphone-11-pro",
+	"version": "1.17.0"
+}

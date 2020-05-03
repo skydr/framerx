@@ -1,0 +1,650 @@
+{
+  "root" : {
+    "__class" : "RootNode",
+    "children" : [
+      {
+        "__class" : "CodeComponentNode",
+        "aspectRatio" : 1,
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+
+        ],
+        "clip" : true,
+        "codeComponentIdentifier" : ".\/IPhone11Pro.tsx_IPhone11Pro",
+        "codeComponentPackageVersion" : null,
+        "codeComponentProps" : {
+          "children" : [
+            {
+              "enabled" : true,
+              "type" : "componentinstance",
+              "value" : "udqeutLGy"
+            }
+          ],
+          "color" : "hsl(0, 0%, 0%)",
+          "image" : "",
+          "iphone" : "spacegrey"
+        },
+        "codeOverrideEnabled" : true,
+        "constraintsLocked" : false,
+        "deviceType" : null,
+        "exportOptions" : [
+          {
+            "__class" : "ExportOptions",
+            "enabled" : true,
+            "id" : "nYXoEL0Vq",
+            "nameExtension" : "",
+            "nameExtensionMode" : "Suffix",
+            "scale" : 1,
+            "type" : "png"
+          }
+        ],
+        "fillColor" : "rgba(255,255,255,1)",
+        "fillEnabled" : false,
+        "fillImage" : null,
+        "fillImageOriginalName" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "height" : 1200,
+        "heightType" : 0,
+        "id" : "EUZHfPlsD",
+        "intrinsicHeight" : 1080,
+        "intrinsicWidth" : 1920,
+        "left" : -488,
+        "locked" : false,
+        "name" : null,
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "D1zhVsKxA",
+        "previewSettings" : {
+          "__class" : "PreviewSettings",
+          "bezel" : false,
+          "deviceType" : null,
+          "responsive" : true,
+          "rotate" : false,
+          "touch" : false,
+          "zoom" : -1
+        },
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "replicaInfo" : null,
+        "right" : null,
+        "rotation" : 0,
+        "top" : -37,
+        "visible" : true,
+        "width" : 1200,
+        "widthType" : 0
+      },
+      {
+        "__class" : "FrameNode",
+        "aspectRatio" : null,
+        "blendingEnabled" : 0,
+        "blendingMode" : "normal",
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+          {
+            "__class" : "TextNode",
+            "autoSize" : true,
+            "bottom" : null,
+            "centerAnchorX" : 0.50138888888888888,
+            "centerAnchorY" : 0.5,
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "exportOptions" : [
+
+            ],
+            "height" : 40,
+            "heightType" : 0,
+            "id" : "gTTJR0oBX",
+            "isTarget" : false,
+            "left" : null,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "udqeutLGy",
+            "right" : null,
+            "rotation" : 0,
+            "styledText" : {
+              "__class" : "StyledTextDraft",
+              "blocks" : [
+                {
+                  "data" : {
+                    "emptyStyle" : [
+                      "COLOR:hsl(0, 0%, 100%)",
+                      "ALIGN:center",
+                      "LINEHEIGHT:1",
+                      "SIZE:40",
+                      "FONT:GF;Inter-800",
+                      "LETTERSPACING:0"
+                    ]
+                  },
+                  "depth" : 0,
+                  "entityRanges" : [
+
+                  ],
+                  "inlineStyleRanges" : [
+                    {
+                      "length" : 9,
+                      "offset" : 0,
+                      "style" : "COLOR:hsl(0, 0%, 100%)"
+                    },
+                    {
+                      "length" : 9,
+                      "offset" : 0,
+                      "style" : "ALIGN:center"
+                    },
+                    {
+                      "length" : 9,
+                      "offset" : 0,
+                      "style" : "LINEHEIGHT:1"
+                    },
+                    {
+                      "length" : 9,
+                      "offset" : 0,
+                      "style" : "SIZE:40"
+                    },
+                    {
+                      "length" : 4,
+                      "offset" : 0,
+                      "style" : "FONT:GF;Inter-800"
+                    },
+                    {
+                      "length" : 4,
+                      "offset" : 5,
+                      "style" : "FONT:GF;Inter-800"
+                    },
+                    {
+                      "length" : 9,
+                      "offset" : 0,
+                      "style" : "LETTERSPACING:0"
+                    },
+                    {
+                      "length" : 1,
+                      "offset" : 4,
+                      "style" : "FONT:GF;Inter-500"
+                    }
+                  ],
+                  "key" : "8q2iu",
+                  "text" : "375 × 812",
+                  "type" : "unstyled"
+                }
+              ],
+              "entityMap" : {
+
+              }
+            },
+            "top" : null,
+            "visible" : true,
+            "width" : 194,
+            "widthType" : 0
+          }
+        ],
+        "clip" : true,
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "deviceType" : null,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "hsl(0, 0%, 0%)",
+        "fillEnabled" : true,
+        "fillImage" : "fsvia8hNFQvnUd3b5h6qEviALc.png",
+        "fillImageOriginalName" : "Asset 19.png",
+        "fillImagePixelHeight" : 1500,
+        "fillImagePixelWidth" : 1500,
+        "fillImageResize" : "fill",
+        "fillType" : "image",
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "height" : 812,
+        "heightType" : 0,
+        "id" : "udqeutLGy",
+        "intrinsicHeight" : 750,
+        "intrinsicWidth" : 750,
+        "isExternalMaster" : null,
+        "isMaster" : false,
+        "isTarget" : false,
+        "left" : 812,
+        "locked" : false,
+        "name" : null,
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "D1zhVsKxA",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "replicaInfo" : null,
+        "right" : null,
+        "rotation" : 0,
+        "top" : -37,
+        "visible" : true,
+        "width" : 375,
+        "widthType" : 0
+      },
+      {
+        "__class" : "FrameNode",
+        "aspectRatio" : null,
+        "blendingEnabled" : 0,
+        "blendingMode" : "normal",
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+
+        ],
+        "clip" : true,
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "deviceType" : null,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "hsl(0, 0%, 0%)",
+        "fillEnabled" : true,
+        "fillImage" : "VY7HeBShNue7jMZctUAO9V5ftv4.png",
+        "fillImageOriginalName" : "Asset 23.png",
+        "fillImagePixelHeight" : 1000,
+        "fillImagePixelWidth" : 1000,
+        "fillImageResize" : "fill",
+        "fillType" : "image",
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "height" : 812,
+        "heightType" : 0,
+        "id" : "rYgj7yagS",
+        "intrinsicHeight" : 500,
+        "intrinsicWidth" : 500,
+        "isExternalMaster" : null,
+        "isMaster" : false,
+        "isTarget" : false,
+        "left" : 1891,
+        "locked" : false,
+        "name" : null,
+        "onTap" : [
+          {
+            "actionIdentifier" : "framer\/useNavigate",
+            "controls" : {
+              "animation" : {
+                "type" : "transition",
+                "value" : {
+                  "damping" : 60,
+                  "delay" : 0,
+                  "duration" : 0.29999999999999999,
+                  "ease" : [
+                    0.44,
+                    0,
+                    0.56000000000000005,
+                    1
+                  ],
+                  "mass" : 1,
+                  "stiffness" : 500,
+                  "type" : "spring"
+                }
+              },
+              "appearsFrom" : {
+                "type" : "segmentedenum",
+                "value" : "right"
+              },
+              "backdropColor" : {
+                "type" : "color",
+                "value" : "rgba(4,4,15,.4)"
+              },
+              "target" : {
+                "type" : "componentinstance",
+                "value" : "XsICie03a"
+              },
+              "transition" : {
+                "type" : "enum",
+                "value" : "push"
+              },
+              "type" : {
+                "type" : "segmentedenum",
+                "value" : "next"
+              }
+            },
+            "identifier" : "4549168f-1ccb-4215-92ac-490de9eebb56"
+          }
+        ],
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "D1zhVsKxA",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "replicaInfo" : null,
+        "right" : null,
+        "rotation" : 0,
+        "top" : 1630,
+        "visible" : true,
+        "width" : 375,
+        "widthType" : 0
+      },
+      {
+        "__class" : "FrameNode",
+        "aspectRatio" : null,
+        "blendingEnabled" : 0,
+        "blendingMode" : "normal",
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+
+        ],
+        "clip" : true,
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "deviceType" : null,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "hsl(0, 0%, 0%)",
+        "fillEnabled" : true,
+        "fillImage" : "VY7HeBShNue7jMZctUAO9V5ftv4.png",
+        "fillImageOriginalName" : "Asset 23.png",
+        "fillImagePixelHeight" : 1000,
+        "fillImagePixelWidth" : 1000,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "height" : 812,
+        "heightType" : 0,
+        "id" : "XsICie03a",
+        "intrinsicHeight" : 500,
+        "intrinsicWidth" : 500,
+        "isExternalMaster" : null,
+        "isMaster" : false,
+        "isTarget" : false,
+        "left" : 2366,
+        "locked" : false,
+        "name" : null,
+        "onTap" : [
+          {
+            "actionIdentifier" : "framer\/useNavigate",
+            "controls" : {
+              "animation" : {
+                "type" : "transition",
+                "value" : {
+                  "damping" : 60,
+                  "delay" : 0,
+                  "duration" : 0.29999999999999999,
+                  "ease" : [
+                    0.44,
+                    0,
+                    0.56000000000000005,
+                    1
+                  ],
+                  "mass" : 1,
+                  "stiffness" : 500,
+                  "type" : "spring"
+                }
+              },
+              "appearsFrom" : {
+                "type" : "segmentedenum",
+                "value" : "right"
+              },
+              "backdropColor" : {
+                "type" : "color",
+                "value" : "rgba(4,4,15,.4)"
+              },
+              "target" : {
+                "type" : "componentinstance",
+                "value" : "rYgj7yagS"
+              },
+              "transition" : {
+                "type" : "enum",
+                "value" : "push"
+              },
+              "type" : {
+                "type" : "segmentedenum",
+                "value" : "next"
+              }
+            },
+            "identifier" : "094f3d8d-b13d-46cc-b5c4-7a4387993c26"
+          }
+        ],
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "D1zhVsKxA",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "replicaInfo" : null,
+        "right" : null,
+        "rotation" : 0,
+        "top" : 1630,
+        "visible" : true,
+        "width" : 375,
+        "widthType" : 0
+      },
+      {
+        "__class" : "FrameNode",
+        "aspectRatio" : null,
+        "blendingEnabled" : 0,
+        "blendingMode" : "normal",
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+          {
+            "__class" : "CodeComponentNode",
+            "aspectRatio" : null,
+            "bottom" : -150,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.5,
+            "children" : [
+
+            ],
+            "clip" : true,
+            "codeComponentIdentifier" : ".\/IPhone11Pro.tsx_IPhone11Pro",
+            "codeComponentPackageVersion" : null,
+            "codeComponentProps" : {
+              "children" : [
+                {
+                  "enabled" : true,
+                  "type" : "componentinstance",
+                  "value" : "rYgj7yagS"
+                }
+              ],
+              "color" : "hsl(0, 0%, 0%)",
+              "image" : "",
+              "iphone" : "spacegrey"
+            },
+            "codeOverrideEnabled" : true,
+            "constraintsLocked" : false,
+            "deviceType" : null,
+            "exportOptions" : [
+              {
+                "__class" : "ExportOptions",
+                "enabled" : true,
+                "id" : "nYXoEL0Vq",
+                "nameExtension" : "",
+                "nameExtensionMode" : "Suffix",
+                "scale" : 1,
+                "type" : "png"
+              }
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "height" : 1500,
+            "heightType" : 0,
+            "id" : "ymObS37AM",
+            "intrinsicHeight" : 1080,
+            "intrinsicWidth" : 1920,
+            "left" : 200,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "WSaRc2Rti",
+            "previewSettings" : {
+              "__class" : "PreviewSettings",
+              "bezel" : false,
+              "deviceType" : null,
+              "responsive" : true,
+              "rotate" : false,
+              "touch" : false,
+              "zoom" : -1
+            },
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : 200,
+            "rotation" : 0,
+            "top" : -150,
+            "visible" : true,
+            "width" : 1200,
+            "widthType" : 0
+          }
+        ],
+        "clip" : true,
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "deviceType" : null,
+        "exportOptions" : [
+          {
+            "__class" : "ExportOptions",
+            "enabled" : true,
+            "id" : "Cf4HrmfSS",
+            "nameExtension" : "",
+            "nameExtensionMode" : "Suffix",
+            "scale" : 1,
+            "type" : "png"
+          },
+          {
+            "__class" : "ExportOptions",
+            "enabled" : true,
+            "id" : "lx1SDgimp",
+            "nameExtension" : "@2x",
+            "nameExtensionMode" : "Suffix",
+            "scale" : 2,
+            "type" : "png"
+          }
+        ],
+        "fillColor" : "#000",
+        "fillEnabled" : true,
+        "fillImage" : null,
+        "fillImageOriginalName" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "height" : 1200,
+        "heightType" : 0,
+        "id" : "WSaRc2Rti",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "isExternalMaster" : null,
+        "isMaster" : false,
+        "isTarget" : false,
+        "left" : 156,
+        "locked" : false,
+        "name" : "iPhone 11 Pro",
+        "opacity" : 1,
+        "originalid" : null,
+        "padding" : 0,
+        "paddingBottom" : 0,
+        "paddingLeft" : 0,
+        "paddingPerSide" : false,
+        "paddingRight" : 0,
+        "paddingTop" : 0,
+        "parentid" : "D1zhVsKxA",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "replicaInfo" : null,
+        "right" : null,
+        "rotation" : 0,
+        "stackAlignment" : "center",
+        "stackDirection" : "horizontal",
+        "stackDistribution" : "center",
+        "stackEnabled" : true,
+        "stackGap" : 10,
+        "top" : 1630,
+        "visible" : true,
+        "width" : 1600,
+        "widthType" : 0
+      }
+    ],
+    "guidesX" : [
+
+    ],
+    "guidesY" : [
+
+    ],
+    "homeNodeId" : "EUZHfPlsD",
+    "id" : "D1zhVsKxA",
+    "name" : null,
+    "originalid" : null,
+    "parentid" : null,
+    "tokens" : {
+
+    },
+    "tokensIndex" : [
+
+    ],
+    "visible" : false
+  },
+  "version" : 60
+}
