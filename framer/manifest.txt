@@ -33,6 +33,12 @@ node_modules/framer/build/framer.api.json
 node_modules/framer/README.md
 node_modules/framer/LICENSE.md
 node_modules/framer/CHANGELOG.md
+node_modules/@framer/framer.device-skin-apple-iphone8-space-gray/yarn.lock
+node_modules/@framer/framer.device-skin-apple-iphone8-space-gray/package.json
+node_modules/@framer/framer.device-skin-apple-iphone8-space-gray/index.ts
+node_modules/@framer/framer.device-skin-apple-iphone8-space-gray/device.png
+node_modules/@framer/framer.device-skin-apple-iphone8-space-gray/build/index.js.map
+node_modules/@framer/framer.device-skin-apple-iphone8-space-gray/build/index.js
 node_modules/@framer/framer.device-skin-apple-iphone-xs-spacegrey/yarn.lock
 node_modules/@framer/framer.device-skin-apple-iphone-xs-spacegrey/package.json
 node_modules/@framer/framer.device-skin-apple-iphone-xs-spacegrey/index.ts
